@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{C698BC6A-5E49-6BBB-85C6-7265529787E9}") = "Test2DProject", "Assembly-CSharp-firstpass.csproj", "{EA5E01B6-6292-D772-30FE-378B39EF950A}"
+EndProject
 Project("{C698BC6A-5E49-6BBB-85C6-7265529787E9}") = "Test2DProject", "Assembly-CSharp.csproj", "{BF8F8663-80AC-F4C9-5FA1-ADEF3031675E}"
 EndProject
 Project("{C698BC6A-5E49-6BBB-85C6-7265529787E9}") = "Test2DProject", "Assembly-CSharp-Editor.csproj", "{9E677998-85A0-1CFF-8323-D702986A2291}"
@@ -13,6 +15,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA5E01B6-6292-D772-30FE-378B39EF950A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA5E01B6-6292-D772-30FE-378B39EF950A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA5E01B6-6292-D772-30FE-378B39EF950A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA5E01B6-6292-D772-30FE-378B39EF950A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF8F8663-80AC-F4C9-5FA1-ADEF3031675E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BF8F8663-80AC-F4C9-5FA1-ADEF3031675E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF8F8663-80AC-F4C9-5FA1-ADEF3031675E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,7 +35,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-														GlobalSection(MonoDevelopProperties) = preSolution
+																GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

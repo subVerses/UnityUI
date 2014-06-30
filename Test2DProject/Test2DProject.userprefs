@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ButtonManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SpeechRecognition\readme.txt">
     <Files>
-      <File FileName="Assets\ButtonController.js" Line="3" Column="18" />
-      <File FileName="Assets\ButtonManager.cs" Line="13" Column="2" />
+      <File FileName="Assets\SpeechRecognition\readme.txt" Line="1" Column="1" />
+      <File FileName="Assets\ButtonController.js" Line="1" Column="1" />
+      <File FileName="Assets\ButtonManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
