@@ -1,10 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SpeechRecognition\readme.txt">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SpeechListener.cs">
     <Files>
+      <File FileName="Assets\ButtonManager.cs" Line="47" Column="46" />
+      <File FileName="c:\Users\Brad\Documents\GitHub\UnityUI\Test2DProject\Assets\SpeechRecognition\Example\SpeechRecognitionExample.cs" Line="1" Column="1" />
       <File FileName="Assets\SpeechRecognition\readme.txt" Line="1" Column="1" />
-      <File FileName="Assets\ButtonController.js" Line="1" Column="1" />
-      <File FileName="Assets\ButtonManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\SpeechListener.cs" Line="6" Column="2" />
+      <File FileName="Assets\Plugins\SpeechRecognition\SpeechRecognition.cs" Line="99" Column="66" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

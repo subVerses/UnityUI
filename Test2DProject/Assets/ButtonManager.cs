@@ -27,10 +27,12 @@ public class ButtonManager : MonoBehaviour {
 		}
 		
 		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height/6,Screen.width/5,Screen.height/6), "Welcome", skin.FindStyle("button"))) {
+
 			Application.LoadLevel (2);
 		}
 		
-		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*2/6,Screen.width/5,Screen.height/6), "Hello", skin.FindStyle("button"))) {
+		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*2/6,Screen.width/5,Screen.height/6), "Microphone", skin.FindStyle("button"))) {
+			SpeechRecognition.StartListening();
 			Application.LoadLevel (2);
 		}
 		

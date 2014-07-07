@@ -1,0 +1,154 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Test2DProject/Assembly-CSharp-Editor-vs.csproj
+#	modified:   Test2DProject/Assembly-CSharp-Editor.csproj
+#	modified:   Test2DProject/Assembly-CSharp-firstpass-vs.csproj
+#	modified:   Test2DProject/Assembly-CSharp-firstpass.csproj
+#	modified:   Test2DProject/Assembly-CSharp-vs.csproj
+#	modified:   Test2DProject/Assembly-CSharp.csproj
+#	modified:   Test2DProject/Assembly-UnityScript-vs.unityproj
+#	modified:   Test2DProject/Assembly-UnityScript.unityproj
+#	deleted:    Test2DProject/Assets/Ash Back.png
+#	deleted:    Test2DProject/Assets/Ash Back.png.meta
+#	modified:   Test2DProject/Assets/ButtonManager.cs
+#	deleted:    Test2DProject/Assets/Buttons.meta
+#	deleted:    Test2DProject/Assets/Pokemon_trainer_red_sprite_by_jamesrayle-d49b1km.png
+#	deleted:    Test2DProject/Assets/Pokemon_trainer_red_sprite_by_jamesrayle-d49b1km.png.meta
+#	modified:   Test2DProject/Assets/Scene1.unity
+#	deleted:    Test2DProject/Assets/Y_Red_Back.png
+#	deleted:    Test2DProject/Assets/Y_Red_Back.png.meta
+#	modified:   Test2DProject/Library/AssetImportState
+#	modified:   Test2DProject/Library/CurrentLayout.dwlt
+#	modified:   Test2DProject/Library/CurrentMaximizeLayout.dwlt
+#	modified:   Test2DProject/Library/EditorUserBuildSettings.asset
+#	modified:   Test2DProject/Library/InspectorExpandedItems.asset
+#	modified:   Test2DProject/Library/ProjectSettings.asset
+#	modified:   Test2DProject/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+#	modified:   Test2DProject/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll.mdb
+#	modified:   Test2DProject/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+#	modified:   Test2DProject/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll.mdb
+#	modified:   Test2DProject/Library/ScriptAssemblies/Assembly-CSharp.dll
+#	modified:   Test2DProject/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+#	modified:   Test2DProject/Library/ScriptAssemblies/Assembly-UnityScript.dll
+#	modified:   Test2DProject/Library/ScriptAssemblies/Assembly-UnityScript.dll.mdb
+#	modified:   Test2DProject/Library/ShaderCache.db
+#	modified:   Test2DProject/Library/assetDatabase3
+#	modified:   Test2DProject/Library/expandedItems
+#	modified:   Test2DProject/Library/guidmapper
+#	modified:   Test2DProject/Library/metadata/0d/0d4e024935750674f8edbbbee9c336e8
+#	deleted:    Test2DProject/Library/metadata/19/198df58cf76ea7b4187603cb626008c5
+#	modified:   Test2DProject/Library/metadata/2c/2c81c5819edf248ac87e8c53666a3420
+#	modified:   Test2DProject/Library/metadata/39/3979ccd715d9d7d418109d7e2c96b456
+#	modified:   Test2DProject/Library/metadata/63/6337102f7dc111c4c83d5c814eef0dbd
+#	modified:   Test2DProject/Library/metadata/64/64635199e4c2840a582ec04a83c45950
+#	modified:   Test2DProject/Library/metadata/65/653757a352200467c8632a5274799d50
+#	modified:   Test2DProject/Library/metadata/82/8226b8aa8a70843c1982f3fd7b498c03
+#	modified:   Test2DProject/Library/metadata/86/860c14f7b2addc64d9f5cc90e228e3c6
+#	modified:   Test2DProject/Library/metadata/87/879c48a78e8281645ad892991baebf5e
+#	modified:   Test2DProject/Library/metadata/8e/8e665c7a02fcb46dda3f6d5fb2a9567e
+#	modified:   Test2DProject/Library/metadata/8f/8f33ac809461e4fa681f1eb0d253ff3a
+#	modified:   Test2DProject/Library/metadata/99/990c4558a8830dc4d9cbbf33ff367394
+#	modified:   Test2DProject/Library/metadata/99/99cb8b6452dee2940bd1ce48545f274d
+#	modified:   Test2DProject/Library/metadata/9b/9b9a256bfbc931d4ca2f621dfdd2e755
+#	modified:   Test2DProject/Library/metadata/9c/9c6a22ef42de64ace9154bf4ad808de6
+#	modified:   Test2DProject/Library/metadata/9d/9dbf8d2515a1505499110f91fcf62638
+#	modified:   Test2DProject/Library/metadata/a6/a69adeb6b9234484fae4ba204d5b6e22
+#	modified:   Test2DProject/Library/metadata/a9/a905a1965ef2546aa9d8d177d6e411d4
+#	modified:   Test2DProject/Library/metadata/ae/ae5b84fae418147b29f33453688905cd
+#	modified:   Test2DProject/Library/metadata/b6/b6c662a3fd370e64090334b84ff5fd9a
+#	modified:   Test2DProject/Library/metadata/eb/eb2509afdd066474e8282a86d5e01399
+#	modified:   Test2DProject/Library/metadata/ec/ec586aa28c136cc4e82e8b1431c051fc
+#	modified:   Test2DProject/Library/metadata/ef/ef1420ca9129b7f429b61d6e1f7e40b3
+#	modified:   Test2DProject/Library/metadata/fb/fb21a966aafc7f84d9ff9334e7dd4f87
+#	modified:   Test2DProject/Library/metadata/fd/fdc9148e888b0dd498a8450800813e5d
+#	modified:   Test2DProject/Library/shadercompiler-1.log
+#	modified:   Test2DProject/ProjectSettings/EditorBuildSettings.asset
+#	modified:   Test2DProject/ProjectSettings/ProjectSettings.asset
+#	deleted:    Test2DProject/Temp/TarGZ/Speech Recognition for Android
+#	deleted:    Test2DProject/Temp/UnityTempFile-2f0e4b62744eff04a811c2d8da2aa790
+#	deleted:    Test2DProject/Temp/UnityTempFile-b3870bf8aa678bf4e8fce14b1cfbfef5
+#	deleted:    Test2DProject/Temp/UnityTempFile-b9a911b388b81434d9a3f19673304970
+#	deleted:    Test2DProject/Temp/UnityTempFile-e0af42ed25ed37446ac500d7b46c0485
+#	modified:   Test2DProject/Temp/__EditModeScene
+#	modified:   Test2DProject/Test2DProject-csharp.sln
+#	modified:   Test2DProject/Test2DProject.sln
+#	modified:   Test2DProject/Test2DProject.userprefs
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	Test2DProject/Assets/Resources.meta
+#	Test2DProject/Assets/Resources/
+#	Test2DProject/Assets/SpeechListener.cs
+#	Test2DProject/Assets/SpeechListener.cs.meta
+#	Test2DProject/Library/ShaderCache/0/
+#	Test2DProject/Library/ShaderCache/1/
+#	Test2DProject/Library/ShaderCache/2/
+#	Test2DProject/Library/ShaderCache/3/
+#	Test2DProject/Library/ShaderCache/4/
+#	Test2DProject/Library/ShaderCache/5/
+#	Test2DProject/Library/ShaderCache/6/6307edf7f7498aba0f263dc4028dc1dc.bin
+#	Test2DProject/Library/ShaderCache/6/6403861b88c637504d23dd7528d21293.bin
+#	Test2DProject/Library/ShaderCache/6/6ca31cb2fdbfeb7d6483a9bf899aca99.bin
+#	Test2DProject/Library/ShaderCache/6/6e1d8f73375b4062147980c73f1c7c73.bin
+#	Test2DProject/Library/ShaderCache/6/6f2478901cb59fdb586c39ceef885033.bin
+#	Test2DProject/Library/ShaderCache/6/6f4caca0a17072bcaf5472957bc98b3d.bin
+#	Test2DProject/Library/ShaderCache/8/83cc6c4b39f28d38b3fe7b8eb6b14e3f.bin
+#	Test2DProject/Library/ShaderCache/8/8624c23554a59eb4d98ffabd9b147fa1.bin
+#	Test2DProject/Library/ShaderCache/8/8db463e79fa81849341469a957e9043e.bin
+#	Test2DProject/Library/ShaderCache/9/
+#	Test2DProject/Library/ShaderCache/a/
+#	Test2DProject/Library/ShaderCache/b/
+#	Test2DProject/Library/ShaderCache/c/
+#	Test2DProject/Library/ShaderCache/d/
+#	Test2DProject/Library/ShaderCache/e/
+#	Test2DProject/Library/ShaderCache/f/
+#	Test2DProject/Library/metadata/1b/
+#	Test2DProject/Library/metadata/24/
+#	Test2DProject/Library/metadata/c5/
+#	Test2DProject/Library/metadata/fe/
+#	Test2DProject/Library/shadercompiler-2.log
+#	Test2DProject/Library/shadercompiler-3.log
+#	Test2DProject/Library/shadercompiler-4.log
+#	Test2DProject/Library/shadercompiler-5.log
+#	Test2DProject/Library/shadercompiler-6.log
+#	Test2DProject/Library/shadercompiler-7.log
+#	Test2DProject/Library/shadercompiler-8.log
+#	Test2DProject/Temp/StagingArea/
+#	Test2DProject/Temp/UnityLockfile
+#	Test2DProject/Temp/UnityTempFile-1bdef21b670a8df43b123acbd91ba01c
+#	Test2DProject/Temp/UnityTempFile-251106b25cbaea844a24aa8f01fe500a
+#	Test2DProject/Temp/UnityTempFile-289f3f7710217e4438ed80f4edb47807
+#	Test2DProject/Temp/UnityTempFile-2ab82f837d5d4c846920475faa8a18b9
+#	Test2DProject/Temp/UnityTempFile-2f3c0bef46de0884a8bf5b99d0bee9c0
+#	Test2DProject/Temp/UnityTempFile-31f34b0d28b25cf4296ff03d5bac3ddc
+#	Test2DProject/Temp/UnityTempFile-3420a261f2e0d3b40a3fa746f91c1d76
+#	Test2DProject/Temp/UnityTempFile-34f651cdf40980849bd58850d596a0f3
+#	Test2DProject/Temp/UnityTempFile-3955df67a6d4cc0499354e614c40639f
+#	Test2DProject/Temp/UnityTempFile-43ee8008f837911439f15192ada9d34e
+#	Test2DProject/Temp/UnityTempFile-5e39920bd80b2454da922afca6d4a6ee
+#	Test2DProject/Temp/UnityTempFile-640eb6215738319468bcae38a6f726ab
+#	Test2DProject/Temp/UnityTempFile-6b276d01c5530a74f93d6b7d81bfd155
+#	Test2DProject/Temp/UnityTempFile-75b7af73e76a2524589e98211d211cc9
+#	Test2DProject/Temp/UnityTempFile-9d9db1bedd7ffdf40aadeb86e84fda7a
+#	Test2DProject/Temp/UnityTempFile-b6e58f28bd71ea34b9f2c36a0837ec76
+#	Test2DProject/Temp/UnityTempFile-c0ec71bf9917c6841bbefa9f476f264a
+#	Test2DProject/Temp/UnityTempFile-c1454e386baadbc49bdaef6540efbc27
+#	Test2DProject/Temp/UnityTempFile-ca6c0ac2d4ae43642979ade8bab66145
+#	Test2DProject/Temp/UnityTempFile-db00ae0471280fc45bffc44864270d9c
+#	Test2DProject/Temp/UnityTempFile-df2c34e8df3458a498604925a4cccc71
+#	Test2DProject/Temp/UnityTempFile-df45b59258c4e7a45a8066b32518c95e
+#	Test2DProject/Temp/UnityTempFile-ea70ec20dd911a84488f31370743855a
+#	Test2DProject/Temp/UnityTempFile-ef2108b734b7ea14babc2ee28f688193
+#	Test2DProject/Temp/UnityTempFile-fb8c0205c56227040b18c2b9ff933fcf
+#	Test2DProject/Temp/__BuildPlayer Backupscene
+#	Test2DProject/Temp/bin/
+#	Test2DProject/Temp/tempFile.res
+#	Test2DProject/Temp/tempFile.resG
+#	Test2DProject/Temp/tempFile.resS
+
