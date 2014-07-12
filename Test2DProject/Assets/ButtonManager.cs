@@ -68,24 +68,65 @@ public class ButtonManager : MonoBehaviour {
 	void OnGUI () {
 		bool enabledBackup = GUI.enabled;
 
+		DialogueOptions dialogue = new DialogueOptions();
+		dialogue.choice1 = "Buenos Dias";
+		dialogue.choice2 = "Bienvenidos";
+		dialogue.choice3 = "Hola";
+
 		GUI.Label (new Rect (Screen.width / 18, Screen.height * 9 / 20, Screen.width / 4, Screen.height / 10), "GUARD0107", skin.FindStyle("label"));
 		GUI.Label (new Rect (Screen.width / 18, 0, Screen.width / 4, Screen.height / 10), "SUSPICION", skin.FindStyle("label"));
 		GUI.Label (new Rect (Screen.width * 4/11, Screen.height * 11 / 20, Screen.width *2/ 5, Screen.height* 1 / 5), "JUAN RIVIERA\nOficinista", skin.FindStyle("textfield"));
 
-		if (GUI.Button (new Rect (Screen.width*4/5,0,Screen.width/5,Screen.height/6), "Click me to record!", skin.FindStyle("button"))) {
-			SpeechRecognition.StartListening();
-			bouton1 = listener.getResults();
+		bool nextScene = false;
+		bool activeChoice = false;
+		GameObject go = GameObject.Find ("SpeechRecognition");
+		SpeechListener sl = go.GetComponent<SpeechListener>();
+
+		if (activeChoice != true) {
+			if (GUI.Toggle (new Rect (Screen.width * 4 / 5, 0, Screen.width / 5, Screen.height / 6), false, dialogue.Choice1, skin.FindStyle ("button"))) {
+				activeChoice = true;
+
+				Debug.Log ("toggle works!");
+
+				string ans = sl.LastResults;
+				Debug.Log (ans + "Speech Listener Initialized");
+
+				string compare = dialogue.Choice1.ToLower();
+
+				if(ans.Contains(compare)){
+					nextScene = true;
+					Debug.Log ("Answer Reached.");
+				}
+					
+			}
+
+			if (GUI.Toggle (new Rect (Screen.width * 4 / 5, Screen.height / 6, Screen.width / 5, Screen.height / 6), false, dialogue.Choice2, skin.FindStyle ("button"))) {
+				activeChoice = true;
+
+
+				string ans = sl.LastResults;
+				string compare = dialogue.Choice2.ToLower();
+
+				if(ans.Contains(compare)){
+					nextScene = true;
+					Debug.Log ("Answer Reached.");
+				}
+			}
+
+			if (GUI.Toggle (new Rect (Screen.width * 4 / 5, Screen.height * 2 / 6, Screen.width / 5, Screen.height / 6), false, dialogue.Choice3, skin.FindStyle ("button"))) {
+				activeChoice = true;
+
+				string ans = sl.LastResults;
+				string compare = dialogue.Choice3.ToLower();
+
+				if(ans.Contains(compare)){
+					nextScene = true;
+					Debug.Log ("Answer Reached.");
+				}
+			}
 		}
 		
-		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height/6,Screen.width/5,Screen.height/6), "Click me to Stop!", skin.FindStyle("button"))) {
-			SpeechRecognition.StopListening();
-		}
-		
-		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*2/6,Screen.width/5,Screen.height/6), bouton1, skin.FindStyle("button"))) {
-			Application.LoadLevel (2);
-		}
-		
-		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*3/6,Screen.width/5,Screen.height/6), "Scan", skin.FindStyle("button"))) {
+		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*3/6,Screen.width/5,Screen.height/6), dialogue.Choice4, skin.FindStyle("button"))) {
 			Application.LoadLevel (2);
 		}
 		
@@ -93,8 +134,9 @@ public class ButtonManager : MonoBehaviour {
 			Application.LoadLevel (2);
 		}
 		
-		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*5/6,Screen.width/5,Screen.height/6), "Exit", skin.FindStyle("button"))) {
-			Application.LoadLevel (2);
+		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*5/6,Screen.width/5,Screen.height/6), "Back", skin.FindStyle("button"))) {
+			activeChoice = false;
+			Debug.Log ("Untoggled.");
 		}
 
 		GUI.enabled = enabledBackup;

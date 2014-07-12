@@ -7,6 +7,12 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 	private GUIStyle fontStyle = new GUIStyle();
 	
 	private string lastResults = "";
+
+	public string LastResults {
+		get {
+			return lastResults;
+		}
+	}
 	
 	//private static Vector2 relativePosition = new Vector2(1,1); //used for the SpeechDictionary example
 	
@@ -107,14 +113,14 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 		//makes the button appear like a toggle, although it doesn't act like one
 		if(!MicIsOn)
 		{
-			if(GUI.Button(new Rect(0,Screen.height*4/6f,Screen.width/6f,Screen.height/4f), Mic)){
+			if(GUI.Button(new Rect(0,Screen.height*3/4f,Screen.width/6f,Screen.height/4f), Mic)){
 				MicIsOn = true;
 				SpeechRecognition.StartListening();
 			}
 		}
 		if(MicIsOn)
 		{
-			if(GUI.Button(new Rect(0,Screen.height*4/6f,Screen.width/6f,Screen.height/4f), MicActive)){
+			if(GUI.Button(new Rect(0,Screen.height*3/4f,Screen.width/6f,Screen.height/4f), MicActive)){
 				MicIsOn = false;
 				SpeechRecognition.StopListening();
 			}

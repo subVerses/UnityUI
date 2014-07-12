@@ -46,28 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\5MinuteGUI\Scripts\AudioState.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\BaseMenuState.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\ChangeGUISkin.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\CreditState.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\GraphicsState.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\InputState.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\MenuConstants.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\MenuStateManager.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\Misc\Constants.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\Misc\GUIHelper.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\Misc\Globals.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\Misc\Misc.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\OptionState.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\PauseState.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\Shop\BaseItem.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\Shop\GoldItem.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\Shop\GoldShop.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\Shop\ShopItem.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\Shop\UpgradeShop.cs" />
-     <Compile Include="Assets\5MinuteGUI\Scripts\StageSelect.cs" />
      <Compile Include="Assets\ButtonManager.cs" />
+     <Compile Include="Assets\DialogueOptions.cs" />
      <Compile Include="Assets\ResponseListener.cs" />
      <Compile Include="Assets\SpeechListener.cs" />
      <Compile Include="Assets\SpeechRecognition\Example\SpeechRecognitionExample.cs" />
@@ -77,12 +57,10 @@
      <Compile Include="Assets\Suspicion Meter\SuspicionBarController.cs" />
      <None Include="Assets\DialogXML\subVerses-Scene01.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
-     <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\Temp\TempShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
      <None Include="Assets\SpeechRecognition\readme.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
-     <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\TextureCopy.shader" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
