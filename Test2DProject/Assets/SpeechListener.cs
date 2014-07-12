@@ -10,7 +10,7 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 	
 	private static Vector2 relativePosition = new Vector2(1,1); //used for the SpeechDictionary example
 	
-	private Rect touchZone = new Rect(0,Screen.height/4f,Screen.width,Screen.height/4f);
+	private Rect touchZone = new Rect(0,Screen.height*4/6f,Screen.width/6f,Screen.height/4f);
 	
 	private ScreenOrientation currentOrientation = ScreenOrientation.Landscape;
 
@@ -101,35 +101,23 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 	void OnGUI(){
 		bool enabledBackup = GUI.enabled;
 		
-		GUI.Label(new Rect(0,0,Screen.width,Screen.height/8f),"RESULTS OF SPEECH: " + lastResults,fontStyle);
-		
-		if(SpeechRecognition.GetTouchToListenEnabled()){
-			GUI.DrawTexture(touchZone,(Texture2D)Resources.Load("SpeechRecognitionExample/grey"));
-			GUI.Label(touchZone, "Press here to listen to speech",fontStyle);
-		}else{
-			if(!MicIsOn)
-			{
-				if(GUI.Button(new Rect(0,Screen.height*4/6f,Screen.width/6f,Screen.height/4f), Mic)){
-					MicIsOn = true;
-					SpeechRecognition.StartListening();
-				}
-			}
-			if(MicIsOn)
-			{
-				if(GUI.Button(new Rect(0,Screen.height*4/6f,Screen.width/6f,Screen.height/4f), MicActive)){
-					MicIsOn = false;
-					SpeechRecognition.StopListening();
-				}
+		GUI.Label(new Rect(0,0,Screen.width,Screen.height/8f),lastResults,fontStyle);
+
+		if(!MicIsOn)
+		{
+			if(GUI.Button(new Rect(0,Screen.height*4/6f,Screen.width/6f,Screen.height/4f), Mic)){
+				MicIsOn = true;
+				SpeechRecognition.StartListening();
 			}
 		}
-		
-		SpeechRecognition.SetTouchToListenEnabled(GUI.Toggle(new Rect(0,Screen.height*2/6f,Screen.width/4f,Screen.height/4f), SpeechRecognition.GetTouchToListenEnabled(), "Touch to listen"));
-		SpeechRecognition.instance.autoRestart = GUI.Toggle(new Rect(0,Screen.height*3/6f,Screen.width/4f,Screen.height/4f), SpeechRecognition.instance.autoRestart, "Auto restart on sound");
-		
-		//GUI.DrawTexture(new Rect((Screen.width-Screen.height/2f)/2f,Screen.height/2f,Screen.height/2f,Screen.height/2f),(Texture2D)Resources.Load("SpeechRecognitionExample/3x3_grid"));
-		
-		//GUI.DrawTexture(new Rect((Screen.width-Screen.height/2f)/2f+Screen.height*relativePosition.x/6f,Screen.height/2f+Screen.height*relativePosition.y/6f,Screen.height/6f,Screen.height/6f),(Texture2D)Resources.Load("SpeechRecognitionExample/x"));
-		
+		if(MicIsOn)
+		{
+			if(GUI.Button(new Rect(0,Screen.height*4/6f,Screen.width/6f,Screen.height/4f), MicActive)){
+				MicIsOn = false;
+				SpeechRecognition.StopListening();
+			}
+		}
+
 		GUI.enabled = enabledBackup;
 	}
 }
