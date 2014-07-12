@@ -8,7 +8,7 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 	
 	private string lastResults = "";
 	
-	private static Vector2 relativePosition = new Vector2(1,1); //used for the SpeechDictionary example
+	//private static Vector2 relativePosition = new Vector2(1,1); //used for the SpeechDictionary example
 	
 	private Rect touchZone = new Rect(0,Screen.height*4/6f,Screen.width/6f,Screen.height/4f);
 	
@@ -18,8 +18,6 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 
 	private Texture MicActive;
 
-
-	
 	//example of ISpeechRecognitionListener
 	public void OnBeginningOfSpeech ()
 	{}
@@ -56,7 +54,8 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 	
 	public void OnRmsChanged (float rmsdB)
 	{}
-	
+
+	//can change these colors later
 	public void OnChangeState (SpeechRecognition.State newState)
 	{
 		if(newState == SpeechRecognition.State.NOT_INITIALIZED){
@@ -71,6 +70,7 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 			Camera.main.backgroundColor = Color.green;
 		}
 	}
+
 	// Use this for initialization
 	void Start () {
 		SpeechRecognition.AddSpeechRecognitionListeren(this);
@@ -100,9 +100,11 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 
 	void OnGUI(){
 		bool enabledBackup = GUI.enabled;
-		
+
+		//at top
 		GUI.Label(new Rect(0,0,Screen.width,Screen.height/8f),lastResults,fontStyle);
 
+		//makes the button appear like a toggle, although it doesn't act like one
 		if(!MicIsOn)
 		{
 			if(GUI.Button(new Rect(0,Screen.height*4/6f,Screen.width/6f,Screen.height/4f), Mic)){
