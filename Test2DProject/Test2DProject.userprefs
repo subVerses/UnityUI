@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ButtonManager.cs">
     <Files>
-      <File FileName="Assets\ButtonManager.cs" Line="113" Column="6" />
-      <File FileName="Assets\SpeechListener.cs" Line="9" Column="32" />
-      <File FileName="Assets\DialogueOptions.cs" Line="43" Column="53" />
+      <File FileName="Assets\ButtonManager.cs" Line="204" Column="68" />
+      <File FileName="Assets\SpeechListener.cs" Line="5" Column="26" />
+      <File FileName="Assets\DialogueOptions.cs" Line="4" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

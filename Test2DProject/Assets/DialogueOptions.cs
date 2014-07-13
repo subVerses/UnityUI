@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DialogueOptions : MonoBehaviour {
+public class DialogueOptions{
 	public string choice1;
 	public string choice2;
 	public string choice3;

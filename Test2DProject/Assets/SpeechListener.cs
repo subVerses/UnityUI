@@ -6,7 +6,7 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 
 	private GUIStyle fontStyle = new GUIStyle();
 	
-	private string lastResults = "";
+	private string lastResults = "hola";
 
 	public string LastResults {
 		get {
