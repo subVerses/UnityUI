@@ -30,7 +30,6 @@ public class ButtonManager : MonoBehaviour {
 		fadeColor.a = fadeAlpha;
 		fadeWaitTime = 5f;
 		SetSpeech ();
-		//Debug.Log (dialogue.Choice1);
 
 //		dialogXML = new XmlDocument();
 //		dialogXML.Load(@"Assets\DialogXML\subVerses-Scene01.xml");
@@ -133,7 +132,7 @@ public class ButtonManager : MonoBehaviour {
 		
 		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*5/6,Screen.width/5,Screen.height/6), "Back", skin.FindStyle("button"))) {
 			fadeDirection = 1;
-			Debug.Log ("Untoggled.");
+			//Debug.Log ("Untoggled.");
 		}
 
 		GUI.enabled = enabledBackup;
@@ -204,7 +203,7 @@ public class ButtonManager : MonoBehaviour {
 		//compares the answer from speech and the users' button selection
 		if(ans.Contains(compare)){
 			nextScene++;
-			Debug.Log ("Answer Reached.");
+			//Debug.Log ("Answer Reached.");
 		}
 		else{
 			yourResponse = "...?";
