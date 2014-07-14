@@ -9,7 +9,7 @@ public class SuspicionBarController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		ticks = 0;
-		greenBar.setTime (15f);
+		greenBar.setTime (30f);
 		greenBar.resetConversation ();
 	}
 	

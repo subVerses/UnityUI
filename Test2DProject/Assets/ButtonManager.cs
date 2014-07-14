@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using System.Collections;
 using System.Xml;
@@ -93,60 +93,66 @@ public class ButtonManager : MonoBehaviour {
 		bool enabledBackup = GUI.enabled;
 
 		if(suspicionBar.isSuspicious()) {
+			Color failureColor = Color.red;
+			failureColor.a = .5f;
+			GUI.color = failureColor;
 			GUI.depth = -2;
 			GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height),failureTexture);
 		} else if (yourResponse == ":)"){
+			Color successColor = Color.green;
+			successColor.a = .5f;
+			GUI.color = successColor;
 			GUI.depth = -3;
 			GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height),successTexture);
-		} else {
-			//fade in/out large GUI box code in front of all UI elements
-			if(fadeAlpha != 0 && fadeAlpha != 1)
-				suspicionBar.reset ();
-			fadeAlpha += fadeDirection * Time.deltaTime / fadeWaitTime;
-			fadeAlpha = Mathf.Clamp01(fadeAlpha);
-			fadeColor.a = fadeAlpha;
-			GUI.color = fadeColor;
-			GUI.depth = -2;
-			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), fadeTexture);
-			//Other GUI elements fade in/out with opposite alpha as large GUI box
-			fadeColor.a = 1 - fadeAlpha;
-			GUI.color = fadeColor;
-			GUI.depth = 0;
-			//GUI text boxes
-			//		GUI.Label (new Rect (Screen.width * 1 / 20, Screen.height * 9 / 20, Screen.width / 4, Screen.height / 10), "GUARD0107", skin.FindStyle("yourTitle"));
-			GUI.Label (new Rect (Screen.height * 1 / 20, 0, Screen.width / 6, Screen.height / 10), "SUSPICION", skin.FindStyle("suspicionLabel"));
-			GUI.Label (new Rect (Screen.width * 7 / 13, 0, Screen.width / 4, Screen.height / 7), "JUAN RIVIERA\nOficinista", skin.FindStyle("theirTitle"));
-			GUI.Label (new Rect (Screen.width * 51 / 160, Screen.height * 11 / 20, Screen.width * 7 / 15, Screen.height * 2 / 5), yourResponse, skin.FindStyle("yourResponse"));
-			GUI.Label (new Rect (Screen.width * 1 / 60, Screen.height * 3 / 20, Screen.width * 23 / 45, Screen.height * 1 / 3), theirResponse, skin.FindStyle("theirResponse"));
+		}
+
+		//fade in/out large GUI box code in front of all UI elements
+		if(fadeAlpha != 0 && fadeAlpha != 1)
+			suspicionBar.reset ();
+		fadeAlpha += fadeDirection * Time.deltaTime / fadeWaitTime;
+		fadeAlpha = Mathf.Clamp01(fadeAlpha);
+		fadeColor.a = fadeAlpha;
+		GUI.color = fadeColor;
+		GUI.depth = -2;
+		GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), fadeTexture);
+		//Other GUI elements fade in/out with opposite alpha as large GUI box
+		fadeColor.a = 1 - fadeAlpha;
+		GUI.color = fadeColor;
+		GUI.depth = 0;
+		//GUI text boxes
+		//		GUI.Label (new Rect (Screen.width * 1 / 20, Screen.height * 9 / 20, Screen.width / 4, Screen.height / 10), "GUARD0107", skin.FindStyle("yourTitle"));
+		GUI.Label (new Rect (Screen.height * 1 / 20, 0, Screen.width / 6, Screen.height / 10), "SUSPICION", skin.FindStyle("suspicionLabel"));
+		GUI.Label (new Rect (Screen.width * 7 / 13, 0, Screen.width / 4, Screen.height / 7), "JUAN RIVIERA\nOficinista", skin.FindStyle("theirTitle"));
+		GUI.Label (new Rect (Screen.width * 51 / 160, Screen.height * 11 / 20, Screen.width * 7 / 15, Screen.height * 2 / 5), yourResponse, skin.FindStyle("yourResponse"));
+		GUI.Label (new Rect (Screen.width * 1 / 60, Screen.height * 3 / 20, Screen.width * 23 / 45, Screen.height * 1 / 3), theirResponse, skin.FindStyle("theirResponse"));
 
 
-			if (GUI.Button (new Rect (Screen.width * 4 / 5, 0, Screen.width / 5, Screen.height / 6), dialogue.Choice1, skin.FindStyle ("button"))) {
-				this.CheckAnswers(1);
-				SetSpeech ();
-			}
+		if (GUI.Button (new Rect (Screen.width * 4 / 5, 0, Screen.width / 5, Screen.height / 6), dialogue.Choice1, skin.FindStyle ("button"))) {
+			this.CheckAnswers(1);
+			SetSpeech ();
+		}
 
-			if (GUI.Button (new Rect (Screen.width * 4 / 5, Screen.height / 6, Screen.width / 5, Screen.height / 6), dialogue.Choice2, skin.FindStyle ("button"))) {
-				this.CheckAnswers(2);
-				SetSpeech ();
-			}
+		if (GUI.Button (new Rect (Screen.width * 4 / 5, Screen.height / 6, Screen.width / 5, Screen.height / 6), dialogue.Choice2, skin.FindStyle ("button"))) {
+			this.CheckAnswers(2);
+			SetSpeech ();
+		}
 
-			if (GUI.Button (new Rect (Screen.width * 4 / 5, Screen.height * 2 / 6, Screen.width / 5, Screen.height / 6), dialogue.Choice3, skin.FindStyle ("button"))) {
-				this.CheckAnswers(3);
-				SetSpeech ();
-			}
+		if (GUI.Button (new Rect (Screen.width * 4 / 5, Screen.height * 2 / 6, Screen.width / 5, Screen.height / 6), dialogue.Choice3, skin.FindStyle ("button"))) {
+			this.CheckAnswers(3);
+			SetSpeech ();
+		}
 
-			if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*3/6,Screen.width/5,Screen.height/6), dialogue.Choice4, skin.FindStyle("button"))) {
-				Application.LoadLevel (2);
-			}
-			
-			if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*4/6,Screen.width/5,Screen.height/6), "Items", skin.FindStyle("button"))) {
-				Application.LoadLevel (2);
-			}
-			
-			if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*5/6,Screen.width/5,Screen.height/6), "Back", skin.FindStyle("button"))) {
-				fadeDirection = 1;
-				//Debug.Log ("Untoggled.");
-			}
+		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*3/6,Screen.width/5,Screen.height/6), dialogue.Choice4, skin.FindStyle("button"))) {
+			Application.LoadLevel (2);
+		}
+		
+		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*4/6,Screen.width/5,Screen.height/6), "Items", skin.FindStyle("button"))) {
+			Application.LoadLevel (2);
+		}
+		
+		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*5/6,Screen.width/5,Screen.height/6), "Back", skin.FindStyle("button"))) {
+			fadeDirection = 1;
+			//Debug.Log ("Untoggled.");
 		}
 
 		GUI.enabled = enabledBackup;
@@ -193,7 +199,7 @@ public class ButtonManager : MonoBehaviour {
 		if (nextScene == 1) {	//doesnt work perfectly yet, a little buggy due to testing in speechlistener
 			ans="[SCAN]";
 		}
-		else{
+		else {
 			ans = sl.LastResults;
 		}
 
