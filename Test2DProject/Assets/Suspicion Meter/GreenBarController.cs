@@ -64,13 +64,8 @@ public class GreenBarController : BarClass {
 
 	public void resetConversation() {
 		fullySuspicious = false;
-		increaseRate = 0;
-		changeScaleVector = new Vector3 (0, 0, 0);
-		changePosVector = new Vector3 (0, 0, 0);
 		transform.localScale = originalScaleVector;
 		transform.localPosition = originalPosVector;
-		renderer.material = newMaterialRef;
-		renderer.material.SetTexture ("_MainTex", greenTexture);
 	}
 
 	public float getIncreaseRate() {

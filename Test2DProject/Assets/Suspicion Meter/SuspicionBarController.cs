@@ -10,15 +10,31 @@ public class SuspicionBarController : MonoBehaviour {
 	void Start () {
 		ticks = 0;
 		greenBar.setTime (15f);
+		greenBar.resetConversation ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		bonusBar.getGreenBarVars (greenBar);
-		if (greenBar.getPercent () >= .6f)
-			bonusBar.bonusAddition (.45f, greenBar);
-		if (ticks == 750)
-			bonusBar.bonusAddition (.1f, greenBar);
+//		if (greenBar.getPercent () >= .6f)
+//			bonusBar.bonusAddition (.45f, greenBar);
+//		if (ticks == 750)
+//			bonusBar.bonusAddition (.1f, greenBar);
 		ticks++;
+	}
+	
+	public void addBonus(float percent) {
+		if(percent >= greenBar.getPercent())
+			bonusBar.bonusAddition(greenBar.getPercent (), greenBar);
+		else
+			bonusBar.bonusAddition (percent, greenBar);
+	}
+	
+	public bool isSuspicious() {
+		return greenBar.isSuspicious ();
+	}
+	
+	public void reset() {
+		greenBar.resetConversation ();
 	}
 }
