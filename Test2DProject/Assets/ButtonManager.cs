@@ -151,7 +151,6 @@ public class ButtonManager : MonoBehaviour {
 		}
 		
 		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*5/6,Screen.width/5,Screen.height/6), "Back", skin.FindStyle("button"))) {
-			fadeDirection = 1;
 			//Debug.Log ("Untoggled.");
 		}
 

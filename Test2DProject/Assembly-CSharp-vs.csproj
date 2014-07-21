@@ -48,6 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\ButtonManager.cs" />
      <Compile Include="Assets\DialogueOptions.cs" />
+     <Compile Include="Assets\Overworld\CharacterController.cs" />
+     <Compile Include="Assets\Overworld\GUIButtons\InputManager.cs" />
+     <Compile Include="Assets\Overworld\GUIButtons\SpriteMover.cs" />
      <Compile Include="Assets\ResponseListener.cs" />
      <Compile Include="Assets\SpeechListener.cs" />
      <Compile Include="Assets\SpeechRecognition\Example\SpeechRecognitionExample.cs" />

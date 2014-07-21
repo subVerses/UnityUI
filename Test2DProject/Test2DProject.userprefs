@@ -1,12 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ButtonManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Overworld\GUIButtons\InputManager.cs">
     <Files>
-      <File FileName="Assets\ButtonManager.cs" Line="135" Column="37" />
-      <File FileName="Assets\Suspicion Meter\SuspicionBarController.cs" Line="30" Column="39" />
-      <File FileName="Assets\Suspicion Meter\GreenBarController.cs" Line="68" Column="47" />
-      <File FileName="Assets\Suspicion Meter\BarClass.cs" Line="25" Column="1" />
-      <File FileName="Assets\Suspicion Meter\BonusBarController.cs" Line="33" Column="4" />
+      <File FileName="Assets\Overworld\GUIButtons\InputManager.cs" Line="5" Column="2" />
+      <File FileName="Assets\Overworld\GUIButtons\SpriteMover.cs" Line="77" Column="26" />
+      <File FileName="Assets\Overworld\CharacterController.cs" Line="16" Column="49" />
+      <File FileName="Assets\Suspicion Meter\SuspicionBarController.cs" Line="5" Column="18" />
+      <File FileName="Assets\Suspicion Meter\GreenBarController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Suspicion Meter\BonusBarController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Suspicion Meter\BarClass.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
