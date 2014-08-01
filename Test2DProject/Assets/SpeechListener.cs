@@ -24,6 +24,8 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 
 	private Texture MicActive;
 
+	private Texture MicVerified;
+
 	//example of ISpeechRecognitionListener
 	public void OnBeginningOfSpeech ()
 	{}
@@ -77,14 +79,21 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 		}
 	}
 
+
+	//ways to change the microphone sprite/texture based on speech recognition!!!
+
+
+
+
 	// Use this for initialization
 	void Start () {
 		SpeechRecognition.AddSpeechRecognitionListeren(this);
 
 		SpeechRecognition.SetTouchToListenZone(touchZone,true);
 
-		Mic = (Texture) Resources.Load ("Microphone");
-		MicActive = (Texture) Resources.Load ("MicrophoneActive");
+		Mic = (Texture) Resources.Load ("MicrophoneCircle");
+		MicActive = (Texture) Resources.Load ("MicrophoneCircleActive");
+		MicVerified = (Texture) Resources.Load ("MicrophoneCircleVerified");
 	}
 
 
@@ -103,26 +112,32 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 	}
 
 	bool MicIsOn = false;
+	public bool showMic = false;
 
 	void OnGUI(){
 		bool enabledBackup = GUI.enabled;
 
-		//at top
-		GUI.Label(new Rect(0,0,Screen.width,Screen.height/8f),lastResults,fontStyle);
+		if(showMic)
+		{
+			//at top
+			GUI.Label(new Rect(0,0,Screen.width,Screen.height/8f),lastResults,fontStyle); //comment out when no longer needed
 
-		//makes the button appear like a toggle, although it doesn't act like one
-		if(!MicIsOn)
-		{
-			if(GUI.Button(new Rect(0,Screen.height*3/4f,Screen.width/6f,Screen.height/4f), Mic)){
-				MicIsOn = true;
-				SpeechRecognition.StartListening();
+			//makes the button appear like a toggle, although it doesn't act like one
+			if(!MicIsOn)
+			{
+				if(GUI.Button(new Rect(Screen.width/3f, Screen.height/3f, Screen.width/3f, Screen.height/3f), Mic, new GUIStyle())){//0,Screen.height*3/4f,Screen.width/6f,Screen.height/4f
+					MicIsOn = true;
+					SpeechRecognition.StartListening();
+					//SpeechRecognition
+				}
 			}
-		}
-		if(MicIsOn)
-		{
-			if(GUI.Button(new Rect(0,Screen.height*3/4f,Screen.width/6f,Screen.height/4f), MicActive)){
-				MicIsOn = false;
-				SpeechRecognition.StopListening();
+			if(MicIsOn)
+			{
+				if(GUI.Button(new Rect(Screen.width/3f, Screen.height/3f, Screen.width/3f, Screen.height/3f), MicActive, new GUIStyle())){//0,Screen.height*3/4f,Screen.width/6f,Screen.height/4f
+					MicIsOn = false;
+					SpeechRecognition.StopListening();
+					showMic = false;
+				}
 			}
 		}
 

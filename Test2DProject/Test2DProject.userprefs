@@ -2,6 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Overworld\GUIButtons\InputManager.cs">
     <Files>
+<<<<<<< HEAD
+      <File FileName="Assets\InventoryPopulate.cs" Line="14" Column="6" />
+      <File FileName="c:\Users\Brad\Documents\GitHub\UnityUI\Test2DProject\Assets\NGUI\Scripts\Editor\NGUIEditorTools.cs" Line="1039" Column="59" />
+      <File FileName="Assets\ButtonManager.cs" Line="108" Column="133" />
+=======
       <File FileName="Assets\Overworld\GUIButtons\InputManager.cs" Line="5" Column="2" />
       <File FileName="Assets\Overworld\GUIButtons\SpriteMover.cs" Line="77" Column="26" />
       <File FileName="Assets\Overworld\CharacterController.cs" Line="16" Column="49" />
@@ -9,6 +14,7 @@
       <File FileName="Assets\Suspicion Meter\GreenBarController.cs" Line="1" Column="1" />
       <File FileName="Assets\Suspicion Meter\BonusBarController.cs" Line="1" Column="1" />
       <File FileName="Assets\Suspicion Meter\BarClass.cs" Line="1" Column="1" />
+>>>>>>> origin/master
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

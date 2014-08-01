@@ -20,7 +20,7 @@ public class ButtonManager : MonoBehaviour {
 	public String yourResponse;
 	public String theirResponse;
 	public ResponseListener listener;
-	public DialogueOptions dialogue = new DialogueOptions();
+	public DialogueSequence dialogueTree = new DialogueSequence();
 	//	public XmlDocument dialogXML;
 	//	public XmlNodeReader nodeReader;
 
@@ -33,50 +33,8 @@ public class ButtonManager : MonoBehaviour {
 		fadeColor.a = fadeAlpha;
 		fadeWaitTime = 5f;
 		SetSpeech ();
-
-//		dialogXML = new XmlDocument();
-//		dialogXML.Load(@"Assets\DialogXML\subVerses-Scene01.xml");
-//		nodeReader = new XmlNodeReader (dialogXML);
-//		XmlReaderSettings settings = new XmlReaderSettings();
-//		settings.ValidationType = ValidationType.Schema;
-//		XmlReader reader = XmlReader.Create (nodeReader, settings);
-//		for(int i = 0; i < 10; i++) {
-//			reader.Read ();
-//			switch (reader.NodeType) {
-//				case XmlNodeType.Element:
-//						Debug.Log(String.Format("1<{0}>", reader.Name));
-//						break;
-//				case XmlNodeType.Text:
-//						Debug.Log(String.Format ("2" + reader.Value));
-//						break;
-//				case XmlNodeType.CDATA:
-//						Debug.Log(String.Format("3<![CDATA[{0}]]>", reader.Value));
-//						break;
-//				case XmlNodeType.ProcessingInstruction:
-//						Debug.Log(String.Format("4<?{0} {1}?>", reader.Name, reader.Value));
-//						break;
-//				case XmlNodeType.Comment:
-//						Debug.Log(String.Format("5<!--{0}-->", reader.Value));
-//						break;
-//				case XmlNodeType.XmlDeclaration:
-//						Debug.Log(String.Format("6<?xml version='1.0'?>"));
-//						break;
-//				case XmlNodeType.Document:
-//						break;
-//				case XmlNodeType.DocumentType:
-//						Debug.Log(String.Format("<7!DOCTYPE {0} [{1}]", reader.Name, reader.Value));
-//						break;
-//				case XmlNodeType.EntityReference:
-//						Debug.Log(String.Format ("8" + reader.Name));
-//						break;
-//				case XmlNodeType.EndElement:
-//				         Debug.Log(String.Format("9</{0}>", reader.Name));
-//						break;
-//			}
-//		}
+		TypeText(yourResponse);
 	}
-
-	static int nextScene = 0;
 
 	// Update is called once per frame
 	void Update () {
@@ -84,13 +42,38 @@ public class ButtonManager : MonoBehaviour {
 	}
 
 	IEnumerator DialogueUpdate(int seconds) {
-			yield return new WaitForSeconds(seconds);
+		yield return new WaitForSeconds(seconds);
 	}
 
+
+	float letterPause = 0.2f; //PROBLEMS BE HERE
+	private string currentWord = "";
+
+	public void AddText(string newText){
+		yourResponse = newText;
+		TypeText(yourResponse);
+	}
+
+	private IEnumerator TypeText (string compareWord){
+		foreach (char c in compareWord){
+		if (yourResponse != compareWord) break;
+			currentWord += c;
+			yield return new WaitForSeconds(letterPause);
+		}
+	} // END THE PROBLEMS
+
+	static int nextScene = 0;
+	DialogueScene currentScene;
+	string choice1 = "";
+	string choice2 = "";
 
 
 	void OnGUI () {
 		bool enabledBackup = GUI.enabled;
+
+		GameObject go = GameObject.Find ("SpeechRecognition");
+		SpeechListener sl = go.GetComponent<SpeechListener>();
+
 
 		if(suspicionBar.isSuspicious()) {
 			Color failureColor = Color.red;
@@ -118,115 +101,123 @@ public class ButtonManager : MonoBehaviour {
 		//Other GUI elements fade in/out with opposite alpha as large GUI box
 		fadeColor.a = 1 - fadeAlpha;
 		GUI.color = fadeColor;
-		GUI.depth = 0;
+		GUI.depth = -2;
 		//GUI text boxes
-		//		GUI.Label (new Rect (Screen.width * 1 / 20, Screen.height * 9 / 20, Screen.width / 4, Screen.height / 10), "GUARD0107", skin.FindStyle("yourTitle"));
 		GUI.Label (new Rect (Screen.height * 1 / 20, 0, Screen.width / 6, Screen.height / 10), "SUSPICION", skin.FindStyle("suspicionLabel"));
 		GUI.Label (new Rect (Screen.width * 7 / 13, 0, Screen.width / 4, Screen.height / 7), "JUAN RIVIERA\nOficinista", skin.FindStyle("theirTitle"));
 		GUI.Label (new Rect (Screen.width * 51 / 160, Screen.height * 11 / 20, Screen.width * 7 / 15, Screen.height * 2 / 5), yourResponse, skin.FindStyle("yourResponse"));
 		GUI.Label (new Rect (Screen.width * 1 / 60, Screen.height * 3 / 20, Screen.width * 23 / 45, Screen.height * 1 / 3), theirResponse, skin.FindStyle("theirResponse"));
 
+		if (GUI.Button (new Rect (Screen.width * 4 / 5, 0, Screen.width / 5, Screen.height / 6), choice1, skin.FindStyle ("button"))) {
 
-		if (GUI.Button (new Rect (Screen.width * 4 / 5, 0, Screen.width / 5, Screen.height / 6), dialogue.Choice1, skin.FindStyle ("button"))) {
-			this.CheckAnswers(1);
+			if(nextScene == 1 || nextScene == 2){
+				nextScene++;}
+			else{
+				sl.showMic = true;
+				this.CheckAnswers(1);}
 			SetSpeech ();
+
 		}
 
-		if (GUI.Button (new Rect (Screen.width * 4 / 5, Screen.height / 6, Screen.width / 5, Screen.height / 6), dialogue.Choice2, skin.FindStyle ("button"))) {
-			this.CheckAnswers(2);
+		if (GUI.Button (new Rect (Screen.width * 4 / 5, Screen.height / 6, Screen.width / 5, Screen.height / 6), choice2, skin.FindStyle ("button"))) {
+
 			SetSpeech ();
+			if(nextScene == 1 || nextScene == 2){
+					}
+			else{
+				sl.showMic = true;
+				this.CheckAnswers(2);}
+			SetSpeech();
 		}
 
-		if (GUI.Button (new Rect (Screen.width * 4 / 5, Screen.height * 2 / 6, Screen.width / 5, Screen.height / 6), dialogue.Choice3, skin.FindStyle ("button"))) {
-			this.CheckAnswers(3);
-			SetSpeech ();
+		if (GUI.Button (new Rect (Screen.width * 4 / 5, Screen.height * 2 / 6, Screen.width / 5, Screen.height / 6), "", skin.FindStyle ("button"))) {
+			//SetSpeech ();
+			//this.CheckAnswers(3);
 		}
 
-		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*3/6,Screen.width/5,Screen.height/6), dialogue.Choice4, skin.FindStyle("button"))) {
-			Application.LoadLevel (2);
+		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*3/6,Screen.width/5,Screen.height/6), "", skin.FindStyle("button"))) {
+			//Application.LoadLevel (2);
 		}
 		
 		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*4/6,Screen.width/5,Screen.height/6), "Items", skin.FindStyle("button"))) {
-			Application.LoadLevel (2);
+			//Application.LoadLevel (2);
 		}
 		
 		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*5/6,Screen.width/5,Screen.height/6), "Back", skin.FindStyle("button"))) {
 			//Debug.Log ("Untoggled.");
 		}
-
+		Debug.Log (nextScene);
 		GUI.enabled = enabledBackup;
 	}
 
 	//sets the dialogue tree, to be refactored later
 	public void SetSpeech(){
-
 		if (nextScene == 0) {
 			theirResponse = "Buenos Dias.";
-			yourResponse = "...";
-			dialogue.choice1 = "Buenos Dias";
-			dialogue.choice2 = "Bienvenidos";
-			dialogue.choice3 = "Hola";
+			yourResponse = "...";//yourResponse = "...";
+			dialogueTree.AddScene();
+			dialogueTree.SetCurrentScene(0);
+			dialogueTree.CurrentScene.AddChoice ("Buenos Dias",1);
+			choice1 = dialogueTree.CurrentScene.Dialogue[0].Text;
+			dialogueTree.CurrentScene.AddChoice ("Bienvenidos",2);
+			choice2 = dialogueTree.CurrentScene.Dialogue[1].Text;
 		}
 		else if (nextScene == 1) {
-			StartCoroutine(DialogueUpdate(1));
 			theirResponse = "Aqui.";
-			StartCoroutine(DialogueUpdate(1));
-			yourResponse = "...";
-			dialogue.choice1 = "[SCAN]";
-			dialogue.choice2 = "";
-			dialogue.choice3 = "";
+			yourResponse = "...";//AddText("...")
+			dialogueTree.AddScene();
+			dialogueTree.SetCurrentScene(1);
+			dialogueTree.CurrentScene.AddChoice ("[SCAN]",1);
+			choice1 = dialogueTree.CurrentScene.Dialogue[0].Text;
+			dialogueTree.CurrentScene.AddChoice ("",2);
+			choice2 = dialogueTree.CurrentScene.Dialogue[1].Text;
 		}
 		else if (nextScene == 2) {
-			StartCoroutine(DialogueUpdate(1));
 			theirResponse = "Gracias.";
-			StartCoroutine(DialogueUpdate(1));
-			yourResponse = ":)";
-			StartCoroutine (DialogueUpdate(2)); //COMPLETE
+			yourResponse = ":)";//COMPLETE
+			dialogueTree.AddScene();
+			dialogueTree.SetCurrentScene(2);
+			dialogueTree.CurrentScene.AddChoice ("Dialogue Complete",1);
+			choice1 = dialogueTree.CurrentScene.Dialogue[0].Text;
+
 		}
 	}
 
+
 	//checks the users answers
 	public void CheckAnswers(int choice){
-		
+
 		GameObject go = GameObject.Find ("SpeechRecognition");
 		SpeechListener sl = go.GetComponent<SpeechListener>();
 
-
 		string ans = "";
 		string compare = "";
-
-		if (nextScene == 1) {	//doesnt work perfectly yet, a little buggy due to testing in speechlistener
-			ans="[SCAN]";
-		}
-		else {
-			ans = sl.LastResults;
-		}
+		ans = sl.LastResults;
 
 		//checks the users choice
 		switch(choice){
 			case 1: 
-				compare = dialogue.Choice1.ToLower();;
-				yourResponse = dialogue.Choice1;
+				compare = dialogueTree.CurrentScene.Dialogue[0].Text;
+				yourResponse = compare + "."; //AddText(compare + ".");
 				suspicionBar.addBonus(.5f);
 				break;
 			case 2:
-				compare = dialogue.Choice2.ToLower();
-				yourResponse = dialogue.Choice2;
+				compare = dialogueTree.CurrentScene.Dialogue[1].Text;
+				yourResponse = compare + ".";
 				suspicionBar.addBonus(.5f);
 				break;
 			case 3:
-				compare = dialogue.Choice3.ToLower();
-				yourResponse = dialogue.Choice3;
-				suspicionBar.addBonus(.5f);
 				break;
 			case 4:
 				break;
 		}
 
+		compare = compare.ToLower();
+
 		//compares the answer from speech and the users' button selection
 		if(ans.Contains(compare)){
+
 			nextScene++;
-			//Debug.Log ("Answer Reached.");
 		}
 		else{
 			yourResponse = "...?";
