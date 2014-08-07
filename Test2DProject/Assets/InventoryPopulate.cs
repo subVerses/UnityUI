@@ -8,14 +8,14 @@ public class InventoryPopulate : MonoBehaviour {
 	
 	void Start () {
 
-		for(int i = 0; i < 25; i++)
-		{
-			GameObject item = NGUITools.AddChild(RootGrid,ItemPref);
-			//item.GetComponent<UILabel>().text = "FOAD";
-		}
-
-		RootGrid.transform.parent.GetComponent<UIDraggablePanel>().ResetPosition ();
-		RootGrid.GetComponent<UIGrid>().Reposition ();
+//		for(int i = 0; i < 25; i++)
+//		{
+//			GameObject item = NGUITools.AddChild(RootGrid,ItemPref);
+//			//item.GetComponent<UILabel>().text = "FOAD";
+//		}
+//
+//		RootGrid.transform.parent.GetComponent<UIDraggablePanel>().ResetPosition ();
+//		RootGrid.GetComponent<UIGrid>().Reposition ();
 
 	}
 

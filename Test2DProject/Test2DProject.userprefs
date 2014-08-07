@@ -1,20 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Overworld\GUIButtons\InputManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Overworld\Scripts\CollidableObjects.cs">
     <Files>
-<<<<<<< HEAD
-      <File FileName="Assets\InventoryPopulate.cs" Line="14" Column="6" />
-      <File FileName="c:\Users\Brad\Documents\GitHub\UnityUI\Test2DProject\Assets\NGUI\Scripts\Editor\NGUIEditorTools.cs" Line="1039" Column="59" />
-      <File FileName="Assets\ButtonManager.cs" Line="108" Column="133" />
-=======
-      <File FileName="Assets\Overworld\GUIButtons\InputManager.cs" Line="5" Column="2" />
-      <File FileName="Assets\Overworld\GUIButtons\SpriteMover.cs" Line="77" Column="26" />
-      <File FileName="Assets\Overworld\CharacterController.cs" Line="16" Column="49" />
-      <File FileName="Assets\Suspicion Meter\SuspicionBarController.cs" Line="5" Column="18" />
-      <File FileName="Assets\Suspicion Meter\GreenBarController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Suspicion Meter\BonusBarController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Suspicion Meter\BarClass.cs" Line="1" Column="1" />
->>>>>>> origin/master
+      <File FileName="Assets\Overworld\Scripts\CharacterInteraction.cs" Line="8" Column="22" />
+      <File FileName="Assets\Overworld\Scripts\CollidableObjects.cs" Line="70" Column="17" />
+      <File FileName="Assets\Overworld\Scripts\SpriteMover.cs" Line="32" Column="37" />
+      <File FileName="c:\Users\Michael\Documents\Subverses\UnityUI\Test2DProject\Assets\NGUI\Scripts\Editor\NGUIEditorTools.cs" Line="1040" Column="70" />
+      <File FileName="c:\Users\Michael\Documents\Subverses\UnityUI\Test2DProject\Assets\NGUI\Scripts\Editor\UIFontInspector.cs" Line="340" Column="5" />
+      <File FileName="c:\Users\Michael\Documents\Subverses\UnityUI\Test2DProject\Assets\NGUI\Scripts\Editor\UIFontMaker.cs" Line="175" Column="26" />
+      <File FileName="c:\Users\Michael\Documents\Subverses\UnityUI\Test2DProject\Assets\InventoryPopulate.cs" Line="12" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
