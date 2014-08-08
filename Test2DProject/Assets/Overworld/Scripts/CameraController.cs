@@ -12,6 +12,7 @@ public class CameraController : MonoBehaviour {
 		xPos = spriteMov.GetComponent<Transform> ().localPosition.x;
 		yPos = spriteMov.GetComponent<Transform> ().localPosition.y;
 		transform.localPosition = new Vector3 (xPos, yPos, transform.localPosition.z);
+		Screen.orientation = ScreenOrientation.LandscapeLeft;
 	}
 	
 	// Update is called once per frame
