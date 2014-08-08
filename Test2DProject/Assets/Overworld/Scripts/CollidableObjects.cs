@@ -71,6 +71,13 @@ public class CollidableObjects : MonoBehaviour {
 		return false;
 	}
 
+	public int findInteractable(Vector2 point) {
+		for(int i = 0; i < interactibleObjects.Length; i++)
+			if(interactibleObjects[i].OverlapPoint(point))
+				return i;
+		return -1;
+	}
+
 //	public void updateCollisionBoxes(float charMinY) {
 //		BoxCollider2D[] escalatorColliders = transform.FindChild("RightEscalator_Sprite").GetComponents<BoxCollider2D>();
 //		SpriteRenderer spriteRenderer = transform.FindChild ("RightEscalator_Sprite").GetComponent<SpriteRenderer> ();

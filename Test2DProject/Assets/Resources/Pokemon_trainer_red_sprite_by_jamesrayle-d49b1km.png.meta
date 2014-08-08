@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: 0d933b869056d03468a97ad06ed66af6
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: Pokemon_trainer_red_sprite_by_jamesrayle-d49b1km
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
