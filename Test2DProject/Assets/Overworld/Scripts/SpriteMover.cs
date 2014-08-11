@@ -7,7 +7,6 @@ public class SpriteMover : MonoBehaviour {
 	Bounds nextBounds;
 	Bounds lastBounds;
 
-	int nextDirection;
 	int currentDirection;
 	float xScale;
 	float yScale;
@@ -21,9 +20,8 @@ public class SpriteMover : MonoBehaviour {
 		lastBounds = charCollider.bounds;
 		xScale = charCollider.bounds.extents.x * 2;
 		yScale = charCollider.bounds.extents.x * 2;
-		nextDirection = -1;
 		currentDirection = -1;
-		speed = .4f;
+		speed = .28f;
 		totalDistance = 0f;
 	}
 	
@@ -33,28 +31,15 @@ public class SpriteMover : MonoBehaviour {
 		moveInDirection (timeChange);
 	}
 
-	public bool setCurrentDirection(int dir) { //0 = left; 1 = up; 2 = right; 3 = down
-		if(currentDirection != dir && currentDirection == -1) {
-			currentDirection = dir;
-			setNextBounds(currentDirection);
-			return true;
-		}
-		return false;
+	public void setCurrentDirection(int dir) { //0 = left; 1 = up; 2 = right; 3 = down
+		currentDirection = dir;
+		setNextBounds(currentDirection);
 	}
 
 	public int getCurrentDirection() {
 		return currentDirection;
 	}
 
-	public void setNextDirection(int dir) {
-		if(currentDirection != dir)
-			nextDirection = dir;
-	}
-
-	public int getNextDirection() {
-		return nextDirection;
-	}
-	
 	void moveInDirection(float deltaTime) {
 		switch (currentDirection) {
 			case -1:
@@ -64,7 +49,6 @@ public class SpriteMover : MonoBehaviour {
 					transform.localPosition = new Vector3( transform.localPosition.x - (xScale - totalDistance), transform.localPosition.y, transform.localPosition.z);
 					totalDistance = 0f;
 					currentDirection = -1;
-					setNextBounds(-1);
 				} else {
 					transform.localPosition = new Vector3( transform.localPosition.x - xScale * (deltaTime / speed), transform.localPosition.y, transform.localPosition.z);
 					totalDistance += xScale * (deltaTime / speed);
@@ -75,7 +59,6 @@ public class SpriteMover : MonoBehaviour {
 					transform.localPosition = new Vector3( transform.localPosition.x, transform.localPosition.y + (yScale - totalDistance), transform.localPosition.z);
 					totalDistance = 0f;
 					currentDirection = -1;
-					setNextBounds(-1);
 				} else {
 					transform.localPosition = new Vector3( transform.localPosition.x, transform.localPosition.y + yScale * (deltaTime / speed), transform.localPosition.z);
 					totalDistance += yScale * (deltaTime / speed);
@@ -86,7 +69,6 @@ public class SpriteMover : MonoBehaviour {
 					transform.localPosition = new Vector3( transform.localPosition.x + (xScale - totalDistance), transform.localPosition.y, transform.localPosition.z);
 					totalDistance = 0f;
 					currentDirection = -1;
-					setNextBounds(-1);
 				} else {
 					transform.localPosition = new Vector3( transform.localPosition.x + xScale * (deltaTime / speed), transform.localPosition.y, transform.localPosition.z);
 					totalDistance += xScale * (deltaTime / speed);
@@ -97,7 +79,6 @@ public class SpriteMover : MonoBehaviour {
 					transform.localPosition = new Vector3( transform.localPosition.x, transform.localPosition.y - (yScale - totalDistance), transform.localPosition.z);
 					totalDistance = 0f;
 					currentDirection = -1;
-					setNextBounds(-1);
 				} else {
 					transform.localPosition = new Vector3( transform.localPosition.x, transform.localPosition.y - yScale * (deltaTime / speed), transform.localPosition.z);
 					totalDistance += yScale * (deltaTime / speed);
