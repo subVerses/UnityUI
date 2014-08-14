@@ -175,11 +175,14 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Overworld\GUIButtons\InputManager.cs" />
+     <Compile Include="Assets\Overworld\NPC\NPC_Interactable.cs" />
+     <Compile Include="Assets\Overworld\NPC\VisionManager_NPC.cs" />
      <Compile Include="Assets\Overworld\Scripts\CameraController.cs" />
      <Compile Include="Assets\Overworld\Scripts\CharacterInteraction.cs" />
      <Compile Include="Assets\Overworld\Scripts\CollidableObjects.cs" />
      <Compile Include="Assets\Overworld\Scripts\SpriteMover.cs" />
      <Compile Include="Assets\ResponseListener.cs" />
+     <Compile Include="Assets\SneakMeter\SneakBar.cs" />
      <Compile Include="Assets\SpeechListener.cs" />
      <Compile Include="Assets\SpeechRecognition\Example\SpeechRecognitionExample.cs" />
      <Compile Include="Assets\Suspicion Meter\BarClass.cs" />

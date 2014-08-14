@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 0d443a0f1b1a27f4691becf267a75c74
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - visibilityStage0: {fileID: 2800000, guid: d459799bf4da7a3408fb9fc4753ae6b6, type: 3}
+  - visibilityStage1: {fileID: 2800000, guid: e3e5bdeaeaac2da43acb83a91cd5b263, type: 3}
+  - visibilityStage2: {fileID: 2800000, guid: ecd87584bf3e7b74b8c142d41a706b91, type: 3}
+  - visibilityStage3: {fileID: 2800000, guid: 0438960be937b74429171e85de4197d2, type: 3}
+  - visibilityStage4A: {fileID: 2800000, guid: d3b838a7edbc73140913e281bd8cbf74, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
