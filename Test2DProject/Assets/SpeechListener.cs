@@ -6,7 +6,7 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 
 	private GUIStyle fontStyle = new GUIStyle();
 	
-	private string lastResults;
+	private string lastResults = "";
 
 	public string LastResults {
 		get {
@@ -83,8 +83,6 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 	//ways to change the microphone sprite/texture based on speech recognition!!!
 
 
-
-
 	// Use this for initialization
 	void Start () {
 		SpeechRecognition.AddSpeechRecognitionListeren(this);
@@ -116,6 +114,8 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 
 	void OnGUI(){
 		bool enabledBackup = GUI.enabled;
+		GameObject go = GameObject.Find ("Buttons");
+		ButtonManager bm = go.GetComponent<ButtonManager>();
 
 		if(showMic)
 		{
@@ -128,7 +128,6 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 				if(GUI.Button(new Rect(Screen.width/3f, Screen.height/3f, Screen.width/3f, Screen.height/3f), Mic, new GUIStyle())){//0,Screen.height*3/4f,Screen.width/6f,Screen.height/4f
 					MicIsOn = true;
 					SpeechRecognition.StartListening();
-					//SpeechRecognition
 				}
 			}
 			if(MicIsOn)
@@ -136,6 +135,7 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 				if(GUI.Button(new Rect(Screen.width/3f, Screen.height/3f, Screen.width/3f, Screen.height/3f), MicActive, new GUIStyle())){//0,Screen.height*3/4f,Screen.width/6f,Screen.height/4f
 					MicIsOn = false;
 					SpeechRecognition.StopListening();
+					bm.CheckAnswers(bm.ButtonSelected);
 					showMic = false;
 				}
 			}
