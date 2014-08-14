@@ -7,8 +7,11 @@ public class VisionManager_NPC : MonoBehaviour {
 	NPC_Interactable npcDir;
 	GameObject charController;
 	SpriteMover charDir;
+
 	SneakBar sneakBar;
 	bool isSeen;
+	bool npcIsHostile;
+	int detection;
 
 	public Ray visionRay;
 	public int currentDirection;
@@ -19,8 +22,11 @@ public class VisionManager_NPC : MonoBehaviour {
 		npcDir = npcCollider.GetComponent<NPC_Interactable>();
 		charController = GameObject.Find ("SpriteController");
 		charDir = charController.GetComponent<SpriteMover>();
+
 		sneakBar = new SneakBar();
 		isSeen = false;
+		detection = sneakBar.getDetection;
+		npcIsHostile = false;
 
 		currentDirection = 0;
 		visionRay = new Ray();
@@ -50,33 +56,38 @@ public class VisionManager_NPC : MonoBehaviour {
 		}
 		
 		visionRay = new Ray (new Vector3(npcCollider.bounds.center.x, npcCollider.bounds.center.y), dirVector);
-		Debug.Log ("THE RAY HAS BEEN DRAWN");
-
-	}
-	
-	void OnGUI() {
 		if(isPlayerSeen())
 		{
+			isSeen = true;
 			sneakBar.incrementDetection();
+			detection = sneakBar.getDetection;
+			//Debug.Log ("Player Seen" + detection);
 		}
 		else
 		{
+			isSeen = false;	
 			sneakBar.decrementDetection();
+			detection = sneakBar.getDetection;
+			//Debug.Log ("Player Not Seen" + detection);
 		}
+	}
+	
+	void OnGUI() {
 		bool enabledBackup = GUI.enabled;
-		int detection = sneakBar.getDetection;
+
 		if(detection == 0){
-			GUI.Box(new Rect(0, 0, Screen.width/5f, Screen.height/5f), sneakBar.visibilityStage0);}
+			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage0);}
 		else if (detection == 1){
-			GUI.Box(new Rect(0, 0, Screen.width/5f, Screen.height/5f), sneakBar.visibilityStage1);}
+			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage1);}
 		else if (detection == 2){
-			GUI.Box(new Rect(0, 0, Screen.width/5f, Screen.height/5f), sneakBar.visibilityStage2);}
-		else if (detection == 3){
-			isSeen = true;
-			GUI.Box(new Rect(0, 0, Screen.width/5f, Screen.height/5f), sneakBar.visibilityStage3);}
-		else if (detection == 4){
-			isSeen = true;
-			GUI.Box(new Rect(0, 0, Screen.width/5f, Screen.height/5f), sneakBar.visibilityStage4A);}
+			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage2);}
+		else if (detection >= 3){
+			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage3);}
+		else if (detection == 4 && npcIsHostile){
+			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage4A);}
+		else{
+			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage0);}
+
 		GUI.enabled = enabledBackup;
 	}
 
@@ -84,6 +95,6 @@ public class VisionManager_NPC : MonoBehaviour {
 	{
 		Bounds b = charDir.getBounds ();
 		Debug.Log (b.IntersectRay (visionRay));
-		return !b.IntersectRay(visionRay);
+		return b.IntersectRay(visionRay);
 	}
 }

@@ -9,13 +9,13 @@ public class SneakBar {
 	public bool npcIsHostile;
 
 	int detectionTicks;
-	public Texture visibilityStage0;
-	public Texture visibilityStage1;
-	public Texture visibilityStage2;
-	public Texture visibilityStage3;
-	public Texture visibilityStage4A;
+	public Texture visibilityStage0 = Resources.Load<Texture>("SneakMeter/VisiblityStage0");
+	public Texture visibilityStage1 = Resources.Load<Texture>("SneakMeter/VisibilityStage1");
+	public Texture visibilityStage2 = Resources.Load<Texture>("SneakMeter/VisibilityStage2");
+	public Texture visibilityStage3 = Resources.Load<Texture>("SneakMeter/VisibilityStage3");
+	public Texture visibilityStage4A = Resources.Load<Texture>("SneakMeter/VisibilityStage4");
 
-	private static int MAX_DETECTED = 4; //maximum value of detectionticks needed for isSeen
+	public const int MAX_DETECTED = 4; //maximum value of detectionticks needed for isSeen
 
 	// Use this for initialization
 	public SneakBar () {
@@ -24,11 +24,13 @@ public class SneakBar {
 	}
 
 	public void incrementDetection() {
-		detectionTicks++;
+		if(detectionTicks<MAX_DETECTED)
+			detectionTicks++;
 	}
 
 	public void decrementDetection() {
-		detectionTicks--;
+		if(detectionTicks>0)
+			detectionTicks--;
 	}
 
 	public int getDetection {
@@ -40,6 +42,36 @@ public class SneakBar {
 	public bool NpcIsHostile {
 		get {
 			return npcIsHostile;
+		}
+	}
+
+	public Texture VisibilityStage0 {
+		get {
+			return visibilityStage0;
+		}
+	}
+	
+	public Texture VisibilityStage1 {
+		get {
+			return visibilityStage1;
+		}
+	}
+	
+	public Texture VisibilityStage2 {
+		get {
+			return visibilityStage2;
+		}
+	}
+	
+	public Texture VisibilityStage3 {
+		get {
+			return visibilityStage3;
+		}
+	}
+	
+	public Texture VisibilityStage4A {
+		get {
+			return visibilityStage4A;
 		}
 	}
 }
