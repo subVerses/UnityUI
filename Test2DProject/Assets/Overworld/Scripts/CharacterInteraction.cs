@@ -100,10 +100,10 @@ public class CharacterInteraction : MonoBehaviour {
 			} else if (spriteMov.getCurrentDirection() != 3)
 				nextInput = 3;
 		}
-		if (GUI.RepeatButton (new Rect (Screen.width * 5 / 7, Screen.height * 4 / 5, Screen.width / 7, Screen.height / 5), "", skin.FindStyle ("aButton")) && spriteMov.getCurrentDirection() == -1) {
+		if (GUI.RepeatButton (new Rect (Screen.width * 5 / 7, Screen.height * 4 / 5, Screen.width / 7, Screen.height / 5), "", skin.FindStyle ("aButton"))) {
 			nextInput = 4;
 		}
-		if (GUI.RepeatButton (new Rect (Screen.width * 6 / 7, Screen.height * 3 / 5, Screen.width / 7, Screen.height / 5), "", skin.FindStyle ("bButton")) && spriteMov.getCurrentDirection() == -1) {
+		if (GUI.RepeatButton (new Rect (Screen.width * 6 / 7, Screen.height * 3 / 5, Screen.width / 7, Screen.height / 5), "", skin.FindStyle ("bButton"))) {
 			nextInput = 5;
 		}
 		if (GUI.RepeatButton (new Rect (Screen.width * 11 / 12, 0, Screen.width / 12, Screen.height / 10), "", skin.FindStyle ("optionsButton"))) {

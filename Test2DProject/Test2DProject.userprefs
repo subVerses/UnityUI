@@ -1,11 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Overworld\Scripts\CameraController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Overworld\Scripts\CharacterInteraction.cs">
     <Files>
       <File FileName="Assets\Overworld\Scripts\CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Overworld\Scripts\CharacterInteraction.cs" Line="130" Column="11" />
+      <File FileName="Assets\Overworld\Scripts\CharacterInteraction.cs" Line="106" Column="149" />
       <File FileName="Assets\Overworld\Scripts\CollidableObjects.cs" Line="66" Column="9" />
-      <File FileName="Assets\Overworld\Scripts\SpriteMover.cs" Line="22" Column="46" />
+      <File FileName="Assets\Overworld\Scripts\SpriteMover.cs" Line="44" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
