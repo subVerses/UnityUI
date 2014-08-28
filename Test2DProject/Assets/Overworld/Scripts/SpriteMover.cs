@@ -8,9 +8,9 @@ public class SpriteMover : MonoBehaviour {
 	Bounds lastBounds;
 
 	int currentDirection;
-	float xScale;
-	float yScale;
-	float totalDistance;
+	public float xScale;
+	public float yScale;
+	public float totalDistance;
 	public float speed; //seconds per square travelled 
 
 	// Use this for initialization
@@ -34,6 +34,15 @@ public class SpriteMover : MonoBehaviour {
 	public void setCurrentDirection(int dir) { //0 = left; 1 = up; 2 = right; 3 = down
 		currentDirection = dir;
 		setNextBounds(currentDirection);
+	}
+
+	public void reverseDirection(int dir) {
+		currentDirection = dir;
+		if(dir == 0 || dir == 2)
+			totalDistance = xScale - totalDistance;
+		else if(dir == 1 || dir == 3)
+			totalDistance = yScale - totalDistance;
+		nextBounds = lastBounds;
 	}
 
 	public int getCurrentDirection() {

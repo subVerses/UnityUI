@@ -47,10 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ButtonManager.cs" />
-     <Compile Include="Assets\DialogueChoice.cs" />
-     <Compile Include="Assets\DialogueOptions.cs" />
-     <Compile Include="Assets\DialogueScene.cs" />
-     <Compile Include="Assets\DialogueSequence.cs" />
+     <Compile Include="Assets\DialogueSequence\DialogueChoice.cs" />
+     <Compile Include="Assets\DialogueSequence\DialogueOptions.cs" />
+     <Compile Include="Assets\DialogueSequence\DialogueScene.cs" />
+     <Compile Include="Assets\DialogueSequence\DialogueSequence.cs" />
+     <Compile Include="Assets\DialogueSequence\SpeechListener.cs" />
      <Compile Include="Assets\GameEngine\CharacterLocationSaver.cs" />
      <Compile Include="Assets\InvItem.cs" />
      <Compile Include="Assets\Inventory.cs" />
@@ -183,10 +184,10 @@
      <Compile Include="Assets\Overworld\Scripts\CameraController.cs" />
      <Compile Include="Assets\Overworld\Scripts\CharacterInteraction.cs" />
      <Compile Include="Assets\Overworld\Scripts\CollidableObjects.cs" />
+     <Compile Include="Assets\Overworld\Scripts\OptionsMenu.cs" />
      <Compile Include="Assets\Overworld\Scripts\SpriteMover.cs" />
      <Compile Include="Assets\ResponseListener.cs" />
      <Compile Include="Assets\SneakMeter\SneakBar.cs" />
-     <Compile Include="Assets\SpeechListener.cs" />
      <Compile Include="Assets\SpeechRecognition\Example\SpeechRecognitionExample.cs" />
      <Compile Include="Assets\Suspicion Meter\BarClass.cs" />
      <Compile Include="Assets\Suspicion Meter\BonusBarController.cs" />
@@ -213,7 +214,6 @@
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (SoftClip).shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
-     <None Include="Assets\NGUI\Font\Font.fnt" />
      <None Include="Assets\Overworld\TestText.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (SoftClip).shader" />

@@ -102,7 +102,6 @@
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (SoftClip).shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
-     <None Include="Assets\NGUI\Font\Font.fnt" />
      <None Include="Assets\Overworld\TestText.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (SoftClip).shader" />
@@ -122,7 +121,7 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/Brad/Documents/GitHub/UnityUI/Test2DProject/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>G:/Firefox Downloads/OMGHOWDOESTHISWORK/UnityUI/Test2DProject/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>G:/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>

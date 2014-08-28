@@ -6,13 +6,25 @@ public class CollidableObjects : MonoBehaviour {
 
 	Collider2D[] uninteractibleObjects;
 	Collider2D[] interactibleObjects;
+	Collider2D[] interactibleNPCs;
+	Collider2D[] visionNPCs;
 	//int currentCharIndex; //smallest index of objectColliders at which the player is either at or in front of
 
 	void Start() {
 		
 		uninteractibleObjects = transform.FindChild("Uninteractibles").GetComponentsInChildren<Collider2D>();
-		interactibleObjects = transform.FindChild("Interactibles").GetComponentsInChildren<Collider2D> ();
 
+		interactibleObjects = transform.FindChild("Interactibles").GetComponentsInChildren<Collider2D>();
+
+		interactibleNPCs = transform.FindChild ("NPCs").GetComponentsInChildren<Collider2D> ();
+		Collider2D[] visionNPCs = new Collider2D[interactibleNPCs.Length/2];
+		Collider2D[] temp = new Collider2D[interactibleNPCs.Length/2];
+		for(int i = 0; i < interactibleNPCs.Length; i ++)
+			if(i % 2 == 0)
+				temp[i/2] = interactibleNPCs[i];
+			else
+				visionNPCs[(i-1)/2] = interactibleNPCs[i];
+		interactibleNPCs = temp; //every other collider for each NPC is its line of sight, so this gets rid of those.
 
 //		int[] layerIndex = new int[objectColliders.Length];
 //		currentCharIndex = 0;
@@ -68,6 +80,9 @@ public class CollidableObjects : MonoBehaviour {
 		foreach(Collider2D collider in interactibleObjects)
 			if(collider.OverlapPoint(point))
 				return true;
+		foreach(Collider2D collider in interactibleNPCs)
+			if(collider.OverlapPoint(point))
+				return true;
 		return false;
 	}
 
@@ -75,6 +90,9 @@ public class CollidableObjects : MonoBehaviour {
 		for(int i = 0; i < interactibleObjects.Length; i++)
 			if(interactibleObjects[i].OverlapPoint(point))
 				return i;
+		for(int i = 0; i < interactibleNPCs.Length; i++)
+			if(interactibleNPCs[i].OverlapPoint(point))
+				return i + interactibleObjects.Length;
 		return -1;
 	}
 
