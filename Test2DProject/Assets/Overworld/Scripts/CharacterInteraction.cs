@@ -42,6 +42,7 @@ public class CharacterInteraction : MonoBehaviour {
 		}
 		if(frameCount != 0) { //if chat GUI should still be displayed, display it
 			GUI.Label (new Rect(Screen.width / 7 , Screen.height / 20, Screen.width * 5 / 7, Screen.height / 5), "Hi! Nice to meet you!", skin.FindStyle("sampleGUI"));
+			Application.LoadLevel ("NPCInteraction"); //loading the NPC scene here, although not sure if this is the best way
 			frameCount--;
 		} else if(sampleText) { //if chat GUI should start to be displayed, activate it
 			sampleText = false;

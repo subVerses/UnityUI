@@ -51,6 +51,7 @@
      <Compile Include="Assets\DialogueOptions.cs" />
      <Compile Include="Assets\DialogueScene.cs" />
      <Compile Include="Assets\DialogueSequence.cs" />
+     <Compile Include="Assets\GameEngine\CharacterLocationSaver.cs" />
      <Compile Include="Assets\InvItem.cs" />
      <Compile Include="Assets\Inventory.cs" />
      <Compile Include="Assets\InventoryPopulate.cs" />
@@ -174,6 +175,7 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITiledSprite.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\Overworld\DontDestroyPlayerOnLoad.cs" />
      <Compile Include="Assets\Overworld\GUIButtons\InputManager.cs" />
      <Compile Include="Assets\Overworld\NPC\NPC_Interactable.cs" />
      <Compile Include="Assets\Overworld\NPC\NPC_SpeechSequence.cs" />

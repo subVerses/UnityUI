@@ -1,10 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SneakMeter\SneakBar.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SpeechListener.cs">
     <Files>
-      <File FileName="Assets\Overworld\NPC\VisionManager_NPC.cs" Line="66" Column="7" />
-      <File FileName="Assets\SneakMeter\SneakBar.cs" Line="33" Column="4" />
-      <File FileName="Assets\Overworld\NPC\NPC_Interactable.cs" Line="1" Column="1" />
+      <File FileName="Assets\SpeechListener.cs" Line="124" Column="117" />
+      <File FileName="Assets\GameEngine\CharacterLocationSaver.cs" Line="5" Column="1" />
+      <File FileName="Assets\Overworld\DontDestroyPlayerOnLoad.cs" Line="16" Column="16" />
+      <File FileName="Assets\ButtonManager.cs" Line="204" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

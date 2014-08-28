@@ -6,7 +6,7 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 
 	private GUIStyle fontStyle = new GUIStyle();
 	
-	private string lastResults = "";
+	private string lastResults = "buenos dias";
 
 	public string LastResults {
 		get {
@@ -114,11 +114,12 @@ public class SpeechListener : MonoBehaviour, ISpeechRecognitionListener {
 
 	void OnGUI(){
 		bool enabledBackup = GUI.enabled;
-		GameObject go = GameObject.Find ("Buttons");
-		ButtonManager bm = go.GetComponent<ButtonManager>();
 
 		if(showMic)
 		{
+			GameObject go = GameObject.Find ("Buttons");
+			ButtonManager bm = go.GetComponent<ButtonManager>();
+
 			//at top
 			GUI.Label(new Rect(0,0,Screen.width,Screen.height/8f),lastResults,fontStyle); //comment out when no longer needed
 

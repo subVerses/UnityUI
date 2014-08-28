@@ -201,7 +201,7 @@ public class ButtonManager : MonoBehaviour {
 			dialogueTree.SetCurrentScene(2);
 			dialogueTree.CurrentScene.AddChoice ("Dialogue Complete",1);
 			choice1 = dialogueTree.CurrentScene.Dialogue[0].Text;
-
+			Application.LoadLevel ("Overworld");
 		}
 	}
 
