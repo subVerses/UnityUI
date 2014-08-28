@@ -46,18 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ButtonManager.cs" />
+     <Compile Include="Assets\DialogueSequence\ButtonManager.cs" />
      <Compile Include="Assets\DialogueSequence\DialogueChoice.cs" />
      <Compile Include="Assets\DialogueSequence\DialogueOptions.cs" />
      <Compile Include="Assets\DialogueSequence\DialogueScene.cs" />
      <Compile Include="Assets\DialogueSequence\DialogueSequence.cs" />
      <Compile Include="Assets\DialogueSequence\SpeechListener.cs" />
      <Compile Include="Assets\GameEngine\CharacterLocationSaver.cs" />
-     <Compile Include="Assets\InvItem.cs" />
-     <Compile Include="Assets\Inventory.cs" />
-     <Compile Include="Assets\InventoryPopulate.cs" />
-     <Compile Include="Assets\Item.cs" />
-     <Compile Include="Assets\Keycard.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
@@ -193,6 +188,11 @@
      <Compile Include="Assets\Suspicion Meter\BonusBarController.cs" />
      <Compile Include="Assets\Suspicion Meter\GreenBarController.cs" />
      <Compile Include="Assets\Suspicion Meter\SuspicionBarController.cs" />
+     <Compile Include="Assets\WIP_Inventory\InvItem.cs" />
+     <Compile Include="Assets\WIP_Inventory\Inventory.cs" />
+     <Compile Include="Assets\WIP_Inventory\InventoryPopulate.cs" />
+     <Compile Include="Assets\WIP_Inventory\Item.cs" />
+     <Compile Include="Assets\WIP_Inventory\Keycard.cs" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\DialogXML\subVerses-Scene01.xml" />
      <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
@@ -214,6 +214,7 @@
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (SoftClip).shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\NGUI\Font\Font.fnt" />
      <None Include="Assets\Overworld\TestText.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (SoftClip).shader" />
