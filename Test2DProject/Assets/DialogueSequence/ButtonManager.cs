@@ -234,7 +234,6 @@ public class ButtonManager : MonoBehaviour {
 		//compares the answer from speech and the users' button selection
 		if(ans.Contains(compare)){
 			nextScene++;
-			Debug.Log (nextScene);
 			SetSpeech();
 			return true;
 		}

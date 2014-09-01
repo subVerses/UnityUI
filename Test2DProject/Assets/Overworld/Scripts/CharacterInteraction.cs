@@ -229,4 +229,10 @@ public class CharacterInteraction : MonoBehaviour {
 		optionsOn = !optionsOn;
 		NGUITools.SetActive(panel, optionsOn);
 	}
+
+	public int NextInput {
+		get {
+			return nextInput;
+		}
+	}
 }

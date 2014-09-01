@@ -1,18 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Overworld\NPC\VisionManager_NPC.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GameEngine\CharacterLocationSaver.cs">
     <Files>
-      <File FileName="Assets\Overworld\NPC\VisionManager_NPC.cs" Line="105" Column="1" />
-      <File FileName="Assets\Overworld\Scripts\CharacterInteraction.cs" Line="1" Column="1" />
-      <File FileName="Assets\Overworld\Scripts\CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Overworld\Scripts\CollidableObjects.cs" Line="1" Column="1" />
-      <File FileName="Assets\Overworld\Scripts\SpriteMover.cs" Line="1" Column="1" />
-      <File FileName="Assets\Overworld\NPC\NPC_SpeechSequence.cs" Line="1" Column="1" />
-      <File FileName="Assets\Overworld\NPC\NPC_Interactable.cs" Line="1" Column="1" />
-      <File FileName="Assets\SneakMeter\SneakBar.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\Michael\Documents\GitHub\UnityUI\Test2DProject\Assets\NGUI\Scripts\UI\UICamera.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\Michael\Documents\GitHub\UnityUI\Test2DProject\Assets\NGUI\Scripts\Editor\NGUIEditorTools.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\Michael\Documents\GitHub\UnityUI\Test2DProject\Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs" Line="1" Column="1" />
+      <File FileName="Assets\GameEngine\CharacterLocationSaver.cs" Line="55" Column="1" />
+      <File FileName="Assets\GameEngine\CharacterLocationSaver.cs" Line="30" Column="55" />
+      <File FileName="Assets\Overworld\DontDestroyPlayerOnLoad.cs" Line="1" Column="1" />
+      <File FileName="Assets\DialogueSequence\ButtonManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
