@@ -7,6 +7,10 @@ public class CameraController : MonoBehaviour {
 	float xPos;
 	float yPos;
 
+	void Awake() {
+		DontDestroyOnLoad (this);
+	}
+
 	// Use this for initialization
 	void Start () {
 		xPos = spriteMov.GetComponent<Transform> ().localPosition.x;

@@ -13,6 +13,10 @@ public class SpriteMover : MonoBehaviour {
 	public float totalDistance;
 	public float speed; //seconds per square travelled 
 
+	void Awake() {
+		DontDestroyOnLoad (this);
+	}
+
 	// Use this for initialization
 	void Start () {
 		charCollider = transform.Find("CharSprite").GetComponent<BoxCollider2D>();

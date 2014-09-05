@@ -9,7 +9,7 @@ public class SneakBar {
 	public bool npcIsHostile;
 
 	int detectionTicks;
-	public Texture visibilityStage0 = Resources.Load<Texture>("SneakMeter/VisiblityStage0");
+	public Texture visibilityStage0 = Resources.Load<Texture>("SneakMeter/VisibilityStage0");
 	public Texture visibilityStage1 = Resources.Load<Texture>("SneakMeter/VisibilityStage1");
 	public Texture visibilityStage2 = Resources.Load<Texture>("SneakMeter/VisibilityStage2");
 	public Texture visibilityStage3 = Resources.Load<Texture>("SneakMeter/VisibilityStage3");

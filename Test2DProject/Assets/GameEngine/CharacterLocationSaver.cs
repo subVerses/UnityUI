@@ -29,16 +29,17 @@ public class CharacterLocationSaver : MonoBehaviour {
 		//sprMover = sprController.GetComponent<SpriteMover>(); //saves the current sprites position by checking the spriteMover object in the scene
 		//charCont = charController.GetComponent<CharacterInteraction>(); //needed to check if the button pressed is A
 
-		if(charCont.NextInput==4) //4 == A
+		if(charCont.NextInput == 4) //4 == A
 		{
 			charPos = sprController.transform.position;
 			charDir = sprController.transform.rotation;
+			Debug.Log (charPos);
 		}
 	}
 
 	//This should save the location to transform the player position to
 	void Awake() {
-		DontDestroyOnLoad(this);
+//		DontDestroyOnLoad(this);
 	}
 
 	//this is supposed to transport the player as well as the spritemover to that position.

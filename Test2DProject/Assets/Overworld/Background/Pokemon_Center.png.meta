@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: e072bf21b56812d478e34724af0a281c
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: Pokemon_Center
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -39,7 +41,11 @@ TextureImporter:
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
   spriteSheet:
     sprites: []
   spritePackingTag: 

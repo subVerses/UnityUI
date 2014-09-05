@@ -21,6 +21,7 @@ public class ButtonManager : MonoBehaviour {
 	public String theirResponse;
 	public ResponseListener listener;
 	public DialogueSequence dialogueTree = new DialogueSequence();
+	bool loadScene;
 
 	public double dticks;
 
@@ -35,11 +36,14 @@ public class ButtonManager : MonoBehaviour {
 		dticks = 0;
 		SetSpeech ();
 		TypeText(yourResponse);
+		loadScene = false;
 	}
 
 	// Update is called once per frame
 	void Update () {
 		dticks++;
+		if(loadScene)
+			Application.LoadLevel("Overworld_Reload");
 		if(dticks>666) //i quit.
 		{
 			dticks = 0;
@@ -168,7 +172,6 @@ public class ButtonManager : MonoBehaviour {
 		if (GUI.Button (new Rect (Screen.width*4/5,Screen.height*5/6,Screen.width/5,Screen.height/6), "Back", skin.FindStyle("button"))) {
 			//Debug.Log ("Untoggled.");
 		}
-		Debug.Log (nextScene);
 		GUI.enabled = enabledBackup;
 	}
 
@@ -201,7 +204,7 @@ public class ButtonManager : MonoBehaviour {
 			dialogueTree.SetCurrentScene(2);
 			dialogueTree.CurrentScene.AddChoice ("Dialogue Complete",1);
 			choice1 = dialogueTree.CurrentScene.Dialogue[0].Text;
-			Application.LoadLevel ("Overworld");
+			loadScene = true;
 		}
 	}
 

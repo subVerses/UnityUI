@@ -13,6 +13,10 @@ public class NPC_Interactable : MonoBehaviour {
 	float totalDistance;
 	public float speed;//seconds per square travelled 
 
+	void Awake () {
+		DontDestroyOnLoad (this);
+	}
+
 	// Use this for initialization
 	void Start () {
 		npcCollider = transform.GetComponent<BoxCollider2D>();

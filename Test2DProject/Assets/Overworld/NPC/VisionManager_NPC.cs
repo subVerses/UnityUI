@@ -94,7 +94,6 @@ public class VisionManager_NPC : MonoBehaviour {
 	public bool isPlayerSeen() //checks the bounds of the character compared to the ray of the vision
 	{
 		Bounds b = charDir.getBounds ();
-		Debug.Log (b.IntersectRay (visionRay));
 		return b.IntersectRay(visionRay);
 	}
 }

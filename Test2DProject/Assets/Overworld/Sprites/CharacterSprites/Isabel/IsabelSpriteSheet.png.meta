@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: d6982071aafe1a64285a884c9d5eba14
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: IsabelSpriteSheet
+    21300002: IsabelSpriteSheet_0
+    21300004: IsabelSpriteSheet_1
+    21300006: IsabelSpriteSheet_2
+    21300008: IsabelSpriteSheet_3
+    21300010: IsabelSpriteSheet_4
+    21300012: IsabelSpriteSheet_5
+    21300014: IsabelSpriteSheet_6
+    21300016: IsabelSpriteSheet_7
+    21300018: IsabelSpriteSheet_8
+    21300020: IsabelSpriteSheet_9
+    21300022: IsabelSpriteSheet_10
+    21300024: IsabelSpriteSheet_11
+    21300026: IsabelSpriteSheet_12
+    21300028: IsabelSpriteSheet_13
+    21300030: IsabelSpriteSheet_14
+    21300032: IsabelSpriteSheet_15
+    21300034: IsabelSpriteSheet_16
+    21300036: IsabelSpriteSheet_17
+    21300038: IsabelSpriteSheet_18
+    21300040: IsabelSpriteSheet_19
+    21300042: IsabelSpriteSheet_20
+    21300044: IsabelSpriteSheet_21
+    21300046: IsabelSpriteSheet_22
+    21300048: IsabelSpriteSheet_23
+    21300050: IsabelSpriteSheet_24
+    21300052: IsabelSpriteSheet_25
+    21300054: IsabelSpriteSheet_26
+    21300056: IsabelSpriteSheet_27
+    21300058: IsabelSpriteSheet_28
+    21300060: IsabelSpriteSheet_29
+    21300062: IsabelSpriteSheet_30
+    21300064: IsabelSpriteSheet_31
+    21300066: IsabelSpriteSheet_32
+    21300068: IsabelSpriteSheet_33
+    21300070: IsabelSpriteSheet_34
+    21300072: IsabelSpriteSheet_35
+    21300074: IsabelSpriteSheet_36
+    21300076: IsabelSpriteSheet_37
+    21300078: IsabelSpriteSheet_38
+    21300080: IsabelSpriteSheet_39
+    21300082: IsabelSpriteSheet_40
+    21300084: IsabelSpriteSheet_41
+    21300086: IsabelSpriteSheet_42
+    21300088: IsabelSpriteSheet_43
+    21300090: IsabelSpriteSheet_44
+    21300092: IsabelSpriteSheet_45
+    21300094: IsabelSpriteSheet_46
+    21300096: IsabelSpriteSheet_47
+    21300098: IsabelSpriteSheet_48
+    21300100: IsabelSpriteSheet_49
+    21300102: IsabelSpriteSheet_50
+    21300104: IsabelSpriteSheet_51
+    21300106: IsabelSpriteSheet_52
+    21300108: IsabelSpriteSheet_53
+    21300110: IsabelSpriteSheet_54
+    21300112: IsabelSpriteSheet_55
+    21300114: IsabelSpriteSheet_56
+    21300116: IsabelSpriteSheet_57
+    21300118: IsabelSpriteSheet_58
+    21300120: IsabelSpriteSheet_59
+    21300122: IsabelSpriteSheet_60
+    21300124: IsabelSpriteSheet_61
+    21300126: IsabelSpriteSheet_62
+    21300128: IsabelSpriteSheet_63
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: IsabelSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 3134
+        width: 203
+        height: 408
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 3134
+        width: 199
+        height: 408
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 3134
+        width: 199
+        height: 408
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 3134
+        width: 198
+        height: 408
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 3134
+        width: 202
+        height: 408
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 2685
+        width: 195
+        height: 397
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 2685
+        width: 195
+        height: 397
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 2685
+        width: 195
+        height: 397
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 2685
+        width: 195
+        height: 397
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 2685
+        width: 195
+        height: 397
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 2242
+        width: 206
+        height: 411
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1803
+        width: 195
+        height: 401
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1803
+        width: 195
+        height: 401
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1803
+        width: 192
+        height: 401
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1803
+        width: 195
+        height: 401
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1803
+        width: 195
+        height: 401
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1361
+        width: 199
+        height: 414
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1357
+        width: 202
+        height: 415
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1354
+        width: 202
+        height: 411
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 1354
+        width: 198
+        height: 407
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 1354
+        width: 199
+        height: 411
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1357
+        width: 198
+        height: 411
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 1357
+        width: 199
+        height: 418
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1364
+        width: 199
+        height: 404
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1350
+        width: 198
+        height: 415
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 1347
+        width: 198
+        height: 418
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 2353
+        y: 1343
+        width: 199
+        height: 422
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 1350
+        width: 199
+        height: 422
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 936
+        width: 195
+        height: 407
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 936
+        width: 191
+        height: 404
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 939
+        width: 192
+        height: 394
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 939
+        width: 191
+        height: 394
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 939
+        width: 195
+        height: 394
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 939
+        width: 192
+        height: 397
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 932
+        width: 195
+        height: 411
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 936
+        width: 191
+        height: 404
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 936
+        width: 191
+        height: 397
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 939
+        width: 192
+        height: 394
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 2384
+        y: 939
+        width: 192
+        height: 397
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 2587
+        y: 939
+        width: 195
+        height: 401
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 490
+        width: 205
+        height: 411
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 479
+        width: 206
+        height: 418
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 476
+        width: 205
+        height: 418
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 472
+        width: 206
+        height: 415
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 479
+        width: 206
+        height: 411
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 486
+        width: 202
+        height: 408
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 479
+        width: 205
+        height: 422
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 472
+        width: 202
+        height: 422
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 472
+        width: 206
+        height: 418
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 472
+        width: 202
+        height: 418
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 2371
+        y: 476
+        width: 205
+        height: 418
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 479
+        width: 202
+        height: 418
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 33
+        width: 196
+        height: 411
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 40
+        width: 192
+        height: 401
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 44
+        width: 191
+        height: 390
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 44
+        width: 195
+        height: 390
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 40
+        width: 192
+        height: 394
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 40
+        width: 195
+        height: 397
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 33
+        width: 192
+        height: 411
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 37
+        width: 195
+        height: 404
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 40
+        width: 195
+        height: 394
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 2165
+        y: 44
+        width: 192
+        height: 390
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 2388
+        y: 40
+        width: 192
+        height: 397
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IsabelSpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 2597
+        y: 44
+        width: 192
+        height: 397
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
