@@ -1,63 +1,47 @@
 Base path: C:/Program Files (x86)/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-1-1328
+Pipe name: \\.\pipe\UnityShaderCompiler-1-6116
 Cmd: getPlatforms
 Cmd: compileSnippet
-  api=5 type=0 insize=942 outsize=619 kw= ok=1
+  api=9 type=0 insize=7048 outsize=6555 kw=DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=942 outsize=6 kw= ok=1
+  api=9 type=1 insize=7048 outsize=7 kw=DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
 Cmd: compileSnippet
-  api=5 type=0 insize=986 outsize=709 kw= ok=1
+  api=9 type=0 insize=4780 outsize=5495 kw=POINT ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=986 outsize=6 kw= ok=1
+  api=9 type=1 insize=4780 outsize=7 kw=POINT ok=1
 Cmd: compileSnippet
-  api=5 type=0 insize=1203 outsize=1137 kw= ok=1
+  api=9 type=1 insize=4780 outsize=7 kw=DIRECTIONAL_COOKIE ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=1203 outsize=6 kw= ok=1
+  api=5 type=0 insize=6012 outsize=5915 kw=DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
 Cmd: compileSnippet
-  api=5 type=0 insize=1322 outsize=1462 kw= ok=1
+  api=5 type=1 insize=6012 outsize=6 kw=DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=1322 outsize=6 kw= ok=1
+  api=5 type=0 insize=3811 outsize=4867 kw=POINT ok=1
 Cmd: compileSnippet
-  api=5 type=0 insize=1274 outsize=1046 kw= ok=1
+  api=5 type=0 insize=3811 outsize=5008 kw=POINT_COOKIE ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=1274 outsize=6 kw= ok=1
+  api=5 type=0 insize=3811 outsize=4603 kw=DIRECTIONAL_COOKIE ok=1
 Cmd: compileSnippet
-  api=5 type=0 insize=1260 outsize=1011 kw= ok=1
+  api=5 type=1 insize=3811 outsize=6 kw=POINT ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=1260 outsize=6 kw= ok=1
+  api=5 type=1 insize=3811 outsize=6 kw=POINT_COOKIE ok=1
 Cmd: compileSnippet
-  api=5 type=0 insize=1260 outsize=1336 kw= ok=1
+  api=5 type=0 insize=5336 outsize=4059 kw=DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=1260 outsize=6 kw= ok=1
+  api=9 type=0 insize=5336 outsize=5126 kw=DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
 Cmd: compileSnippet
-  api=5 type=0 insize=1282 outsize=1273 kw= ok=1
+  api=5 type=1 insize=5336 outsize=6 kw=DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=1282 outsize=6 kw= ok=1
+  api=9 type=1 insize=5336 outsize=7 kw=DIRECTIONAL LIGHTMAP_ON DIRLIGHTMAP_ON ok=1
 Cmd: compileSnippet
-  api=5 type=0 insize=1222 outsize=1113 kw= ok=1
+  api=5 type=0 insize=2853 outsize=3366 kw=POINT ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=1222 outsize=6 kw= ok=1
+  api=5 type=0 insize=2853 outsize=3459 kw=POINT_COOKIE ok=1
 Cmd: compileSnippet
-  api=5 type=0 insize=1218 outsize=1113 kw= ok=1
+  api=5 type=0 insize=2853 outsize=3187 kw=DIRECTIONAL_COOKIE ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=1218 outsize=6 kw= ok=1
+  api=5 type=1 insize=2853 outsize=6 kw=POINT ok=1
 Cmd: compileSnippet
-  api=5 type=0 insize=1277 outsize=1030 kw= ok=1
+  api=5 type=1 insize=2853 outsize=6 kw=SPOT ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=1277 outsize=6 kw= ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=1333 outsize=1046 kw= ok=1
-Cmd: compileSnippet
-  api=5 type=1 insize=1333 outsize=6 kw= ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=956 outsize=781 kw= ok=1
-Cmd: compileSnippet
-  api=5 type=1 insize=956 outsize=6 kw= ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=1051 outsize=1040 kw= ok=1
-Cmd: compileSnippet
-  api=5 type=1 insize=1051 outsize=6 kw= ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=1041 outsize=916 kw= ok=1
-Cmd: compileSnippet
-  api=5 type=1 insize=1041 outsize=6 kw= ok=1
+  api=5 type=1 insize=2853 outsize=6 kw=DIRECTIONAL_COOKIE ok=1

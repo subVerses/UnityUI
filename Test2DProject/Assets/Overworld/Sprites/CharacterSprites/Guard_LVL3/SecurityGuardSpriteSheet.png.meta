@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: ffa0d980ac0715b45a15c4591961cda3
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SecurityGuardSpriteSheet
+    21300002: SecurityGuardSpriteSheet_0
+    21300004: SecurityGuardSpriteSheet_1
+    21300006: SecurityGuardSpriteSheet_2
+    21300008: SecurityGuardSpriteSheet_3
+    21300010: SecurityGuardSpriteSheet_4
+    21300012: SecurityGuardSpriteSheet_5
+    21300014: SecurityGuardSpriteSheet_6
+    21300016: SecurityGuardSpriteSheet_7
+    21300018: SecurityGuardSpriteSheet_8
+    21300020: SecurityGuardSpriteSheet_9
+    21300022: SecurityGuardSpriteSheet_10
+    21300024: SecurityGuardSpriteSheet_11
+    21300026: SecurityGuardSpriteSheet_12
+    21300028: SecurityGuardSpriteSheet_13
+    21300030: SecurityGuardSpriteSheet_14
+    21300032: SecurityGuardSpriteSheet_15
+    21300034: SecurityGuardSpriteSheet_16
+    21300036: SecurityGuardSpriteSheet_17
+    21300038: SecurityGuardSpriteSheet_18
+    21300040: SecurityGuardSpriteSheet_19
+    21300042: SecurityGuardSpriteSheet_20
+    21300044: SecurityGuardSpriteSheet_21
+    21300046: SecurityGuardSpriteSheet_22
+    21300048: SecurityGuardSpriteSheet_23
+    21300050: SecurityGuardSpriteSheet_24
+    21300052: SecurityGuardSpriteSheet_25
+    21300054: SecurityGuardSpriteSheet_26
+    21300056: SecurityGuardSpriteSheet_27
+    21300058: SecurityGuardSpriteSheet_28
+    21300060: SecurityGuardSpriteSheet_29
+    21300062: SecurityGuardSpriteSheet_30
+    21300064: SecurityGuardSpriteSheet_31
+    21300066: SecurityGuardSpriteSheet_32
+    21300068: SecurityGuardSpriteSheet_33
+    21300070: SecurityGuardSpriteSheet_34
+    21300072: SecurityGuardSpriteSheet_35
+    21300074: SecurityGuardSpriteSheet_36
+    21300076: SecurityGuardSpriteSheet_37
+    21300078: SecurityGuardSpriteSheet_38
+    21300080: SecurityGuardSpriteSheet_39
+    21300082: SecurityGuardSpriteSheet_40
+    21300084: SecurityGuardSpriteSheet_41
+    21300086: SecurityGuardSpriteSheet_42
+    21300088: SecurityGuardSpriteSheet_43
+    21300090: SecurityGuardSpriteSheet_44
+    21300092: SecurityGuardSpriteSheet_45
+    21300094: SecurityGuardSpriteSheet_46
+    21300096: SecurityGuardSpriteSheet_47
+    21300098: SecurityGuardSpriteSheet_48
+    21300100: SecurityGuardSpriteSheet_49
+    21300102: SecurityGuardSpriteSheet_50
+    21300104: SecurityGuardSpriteSheet_51
+    21300106: SecurityGuardSpriteSheet_52
+    21300108: SecurityGuardSpriteSheet_53
+    21300110: SecurityGuardSpriteSheet_54
+    21300112: SecurityGuardSpriteSheet_55
+    21300114: SecurityGuardSpriteSheet_56
+    21300116: SecurityGuardSpriteSheet_57
+    21300118: SecurityGuardSpriteSheet_58
+    21300120: SecurityGuardSpriteSheet_59
+    21300122: SecurityGuardSpriteSheet_60
+    21300124: SecurityGuardSpriteSheet_61
+    21300126: SecurityGuardSpriteSheet_62
+    21300128: SecurityGuardSpriteSheet_63
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 4096
+    textureFormat: -3
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: SecurityGuardSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 3193
+        width: 179
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 3193
+        width: 181
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 3193
+        width: 181
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 3193
+        width: 179
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 3193
+        width: 179
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 2727
+        width: 158
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 2727
+        width: 156
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 2727
+        width: 156
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 2727
+        width: 158
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 2727
+        width: 158
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 2245
+        width: 179
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1791
+        width: 158
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1791
+        width: 158
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1791
+        width: 160
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1791
+        width: 160
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1791
+        width: 156
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1346
+        width: 184
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1344
+        width: 184
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1352
+        width: 176
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1343
+        width: 174
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 1346
+        width: 175
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 1346
+        width: 180
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 1344
+        width: 184
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1344
+        width: 181
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 1341
+        width: 176
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 1339
+        width: 172
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 1337
+        width: 176
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 1344
+        width: 183
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 917
+        width: 160
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 912
+        width: 161
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 917
+        width: 173
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 912
+        width: 174
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 912
+        width: 174
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 917
+        width: 161
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 917
+        width: 160
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 908
+        width: 160
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 917
+        width: 186
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 914
+        width: 179
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 915
+        width: 172
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 919
+        width: 161
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 465
+        width: 183
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 460
+        width: 179
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 462
+        width: 172
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 462
+        width: 176
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 472
+        width: 182
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 469
+        width: 188
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 467
+        width: 182
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 465
+        width: 176
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 464
+        width: 176
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 465
+        width: 177
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 467
+        width: 186
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 469
+        width: 185
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 29
+        width: 160
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 24
+        width: 161
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 29
+        width: 174
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 27
+        width: 177
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 26
+        width: 171
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 29
+        width: 162
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 27
+        width: 161
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 24
+        width: 161
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 27
+        width: 180
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 24
+        width: 177
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 27
+        width: 174
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SecurityGuardSpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 31
+        width: 163
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

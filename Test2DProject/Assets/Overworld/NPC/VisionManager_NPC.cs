@@ -20,7 +20,7 @@ public class VisionManager_NPC : MonoBehaviour {
 	void Start () {
 		npcCollider = transform.GetComponentInChildren<BoxCollider2D>();
 		npcDir = npcCollider.GetComponent<NPC_Interactable>();
-		charController = GameObject.Find ("SpriteController");
+		charController = GameObject.Find ("CharSprite");
 		charDir = charController.GetComponent<SpriteMover>();
 
 		sneakBar = new SneakBar();
@@ -71,25 +71,25 @@ public class VisionManager_NPC : MonoBehaviour {
 			//Debug.Log ("Player Not Seen" + detection);
 		}
 	}
-	
-	void OnGUI() {
-		bool enabledBackup = GUI.enabled;
-
-		if(detection == 0){
-			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage0);}
-		else if (detection == 1){
-			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage1);}
-		else if (detection == 2){
-			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage2);}
-		else if (detection >= 3){
-			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage3);}
-		else if (detection == 4 && npcIsHostile){
-			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage4A);}
-		else{
-			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage0);}
-
-		GUI.enabled = enabledBackup;
-	}
+//	
+//	void OnGUI() {
+//		bool enabledBackup = GUI.enabled;
+//
+//		if(detection == 0){
+//			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage0);}
+//		else if (detection == 1){
+//			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage1);}
+//		else if (detection == 2){
+//			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage2);}
+//		else if (detection >= 3){
+//			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage3);}
+//		else if (detection == 4 && npcIsHostile){
+//			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage4A);}
+//		else{
+//			GUI.DrawTexture(new Rect(0, 0, Screen.width/8f, Screen.height/8f), sneakBar.VisibilityStage0);}
+//
+//		GUI.enabled = enabledBackup;
+//	}
 
 	public bool isPlayerSeen() //checks the bounds of the character compared to the ray of the vision
 	{

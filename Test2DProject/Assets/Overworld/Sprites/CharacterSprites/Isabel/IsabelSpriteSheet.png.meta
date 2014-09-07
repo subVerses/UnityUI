@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d6982071aafe1a64285a884c9d5eba14
+guid: 71bf30cdb7fae3e48b4d44bbcaad39e3
 TextureImporter:
   fileIDToRecycleName:
     21300000: IsabelSpriteSheet
@@ -102,7 +102,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings:
@@ -119,7 +119,7 @@ TextureImporter:
         y: 3134
         width: 203
         height: 408
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_1
@@ -129,7 +129,7 @@ TextureImporter:
         y: 3134
         width: 199
         height: 408
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_2
@@ -139,7 +139,7 @@ TextureImporter:
         y: 3134
         width: 199
         height: 408
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_3
@@ -149,7 +149,7 @@ TextureImporter:
         y: 3134
         width: 198
         height: 408
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_4
@@ -159,7 +159,7 @@ TextureImporter:
         y: 3134
         width: 202
         height: 408
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_5
@@ -169,7 +169,7 @@ TextureImporter:
         y: 2685
         width: 195
         height: 397
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_6
@@ -179,7 +179,7 @@ TextureImporter:
         y: 2685
         width: 195
         height: 397
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_7
@@ -189,7 +189,7 @@ TextureImporter:
         y: 2685
         width: 195
         height: 397
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_8
@@ -199,7 +199,7 @@ TextureImporter:
         y: 2685
         width: 195
         height: 397
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_9
@@ -209,7 +209,7 @@ TextureImporter:
         y: 2685
         width: 195
         height: 397
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_10
@@ -219,7 +219,7 @@ TextureImporter:
         y: 2242
         width: 206
         height: 411
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_11
@@ -229,7 +229,7 @@ TextureImporter:
         y: 1803
         width: 195
         height: 401
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_12
@@ -239,7 +239,7 @@ TextureImporter:
         y: 1803
         width: 195
         height: 401
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_13
@@ -249,7 +249,7 @@ TextureImporter:
         y: 1803
         width: 192
         height: 401
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_14
@@ -259,7 +259,7 @@ TextureImporter:
         y: 1803
         width: 195
         height: 401
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_15
@@ -269,7 +269,7 @@ TextureImporter:
         y: 1803
         width: 195
         height: 401
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_16
@@ -279,7 +279,7 @@ TextureImporter:
         y: 1361
         width: 199
         height: 414
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_17
@@ -289,7 +289,7 @@ TextureImporter:
         y: 1357
         width: 202
         height: 415
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_18
@@ -299,7 +299,7 @@ TextureImporter:
         y: 1354
         width: 202
         height: 411
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_19
@@ -309,7 +309,7 @@ TextureImporter:
         y: 1354
         width: 198
         height: 407
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_20
@@ -319,7 +319,7 @@ TextureImporter:
         y: 1354
         width: 199
         height: 411
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_21
@@ -329,7 +329,7 @@ TextureImporter:
         y: 1357
         width: 198
         height: 411
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_22
@@ -339,7 +339,7 @@ TextureImporter:
         y: 1357
         width: 199
         height: 418
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_23
@@ -349,7 +349,7 @@ TextureImporter:
         y: 1364
         width: 199
         height: 404
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_24
@@ -359,7 +359,7 @@ TextureImporter:
         y: 1350
         width: 198
         height: 415
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_25
@@ -369,7 +369,7 @@ TextureImporter:
         y: 1347
         width: 198
         height: 418
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_26
@@ -379,7 +379,7 @@ TextureImporter:
         y: 1343
         width: 199
         height: 422
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_27
@@ -389,7 +389,7 @@ TextureImporter:
         y: 1350
         width: 199
         height: 422
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_28
@@ -399,7 +399,7 @@ TextureImporter:
         y: 936
         width: 195
         height: 407
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_29
@@ -409,7 +409,7 @@ TextureImporter:
         y: 936
         width: 191
         height: 404
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_30
@@ -419,7 +419,7 @@ TextureImporter:
         y: 939
         width: 192
         height: 394
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_31
@@ -429,7 +429,7 @@ TextureImporter:
         y: 939
         width: 191
         height: 394
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_32
@@ -439,7 +439,7 @@ TextureImporter:
         y: 939
         width: 195
         height: 394
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_33
@@ -449,7 +449,7 @@ TextureImporter:
         y: 939
         width: 192
         height: 397
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_34
@@ -459,7 +459,7 @@ TextureImporter:
         y: 932
         width: 195
         height: 411
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_35
@@ -469,7 +469,7 @@ TextureImporter:
         y: 936
         width: 191
         height: 404
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_36
@@ -479,7 +479,7 @@ TextureImporter:
         y: 936
         width: 191
         height: 397
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_37
@@ -489,7 +489,7 @@ TextureImporter:
         y: 939
         width: 192
         height: 394
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_38
@@ -499,7 +499,7 @@ TextureImporter:
         y: 939
         width: 192
         height: 397
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_39
@@ -509,7 +509,7 @@ TextureImporter:
         y: 939
         width: 195
         height: 401
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_40
@@ -519,7 +519,7 @@ TextureImporter:
         y: 490
         width: 205
         height: 411
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_41
@@ -529,7 +529,7 @@ TextureImporter:
         y: 479
         width: 206
         height: 418
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_42
@@ -539,7 +539,7 @@ TextureImporter:
         y: 476
         width: 205
         height: 418
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_43
@@ -549,7 +549,7 @@ TextureImporter:
         y: 472
         width: 206
         height: 415
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_44
@@ -559,7 +559,7 @@ TextureImporter:
         y: 479
         width: 206
         height: 411
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_45
@@ -569,7 +569,7 @@ TextureImporter:
         y: 486
         width: 202
         height: 408
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_46
@@ -579,7 +579,7 @@ TextureImporter:
         y: 479
         width: 205
         height: 422
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_47
@@ -589,7 +589,7 @@ TextureImporter:
         y: 472
         width: 202
         height: 422
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_48
@@ -599,7 +599,7 @@ TextureImporter:
         y: 472
         width: 206
         height: 418
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_49
@@ -609,7 +609,7 @@ TextureImporter:
         y: 472
         width: 202
         height: 418
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_50
@@ -619,7 +619,7 @@ TextureImporter:
         y: 476
         width: 205
         height: 418
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_51
@@ -629,7 +629,7 @@ TextureImporter:
         y: 479
         width: 202
         height: 418
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_52
@@ -639,7 +639,7 @@ TextureImporter:
         y: 33
         width: 196
         height: 411
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_53
@@ -649,7 +649,7 @@ TextureImporter:
         y: 40
         width: 192
         height: 401
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_54
@@ -659,7 +659,7 @@ TextureImporter:
         y: 44
         width: 191
         height: 390
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_55
@@ -669,7 +669,7 @@ TextureImporter:
         y: 44
         width: 195
         height: 390
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_56
@@ -679,7 +679,7 @@ TextureImporter:
         y: 40
         width: 192
         height: 394
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_57
@@ -689,7 +689,7 @@ TextureImporter:
         y: 40
         width: 195
         height: 397
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_58
@@ -699,7 +699,7 @@ TextureImporter:
         y: 33
         width: 192
         height: 411
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_59
@@ -709,7 +709,7 @@ TextureImporter:
         y: 37
         width: 195
         height: 404
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_60
@@ -719,7 +719,7 @@ TextureImporter:
         y: 40
         width: 195
         height: 394
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_61
@@ -729,7 +729,7 @@ TextureImporter:
         y: 44
         width: 192
         height: 390
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_62
@@ -739,7 +739,7 @@ TextureImporter:
         y: 40
         width: 192
         height: 397
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: IsabelSpriteSheet_63
@@ -749,7 +749,7 @@ TextureImporter:
         y: 44
         width: 192
         height: 397
-      alignment: 2
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
